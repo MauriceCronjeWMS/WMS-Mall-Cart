@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
-
+// Colors
 $color-primary: #233043;
 $color-secondary: #00000029;
 $color-tertiary: #44546a;
@@ -10,6 +10,9 @@ $color-septenary: #f4f4f4;
 $color-octonary: #303030;
 $color-nonary: #5a6472;
 $color-denary: #535f6f;
+
+// Animations
+$animation-basic-primary: 0.3s ease-in all;
 
 // Utitlity's
 * {
@@ -95,7 +98,7 @@ body {
           color: $color-quinary;
           // background-color: $color-tertiary;
           background-color: transparent;
-          transition: 0.3s ease-in all;
+          transition: $animation-basic-primary;
           cursor: pointer;
           display: flex;
           align-items: center;
