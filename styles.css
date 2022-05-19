@@ -1,0 +1,411 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+body {
+  background-color: #233043;
+}
+
+.order-deliveryInfo-container {
+  max-width: 1340px;
+  margin: auto;
+  min-height: 100vh;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-header-container .order-deliveryInfo-header-title {
+  background-color: #fcdb10;
+  margin-top: 112px;
+  height: 96px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-header-container .order-deliveryInfo-header-title h1 {
+  color: #233043;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 43px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 25px 0 28px;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-header-container .order-deliveryInfo-header-breadcrums-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-header-container .order-deliveryInfo-header-breadcrums-container .order-deliveryInfo-header-breadcrums {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 14px 0 16px;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-header-container .order-deliveryInfo-header-breadcrums-container .order-deliveryInfo-header-breadcrums h3 {
+  color: #8a8a8a;
+  font-size: 12px;
+  line-height: 16px;
+  margin-right: 8px;
+  font-weight: normal;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-header-container .order-deliveryInfo-header-breadcrums-container .order-deliveryInfo-header-breadcrums h3.available {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-header-container .order-deliveryInfo-header-breadcrums-container .order-deliveryInfo-header-breadcrums-button button {
+  border: none;
+  outline: none;
+  color: #ffffff;
+  background-color: transparent;
+  -webkit-transition: 0.3s ease-in all;
+  transition: 0.3s ease-in all;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-header-container .order-deliveryInfo-header-breadcrums-container .order-deliveryInfo-header-breadcrums-button button h4 {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: normal;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-header-container .order-deliveryInfo-header-breadcrums-container .order-deliveryInfo-header-breadcrums-button button i {
+  font-size: 12px;
+  margin-right: 5px;
+  line-height: 16px;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-header-container .order-deliveryInfo-header-breadcrums-container .order-deliveryInfo-header-breadcrums-button button:hover {
+  color: #8a8a8a;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 13px;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses-container {
+  width: 857px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses-container .order-deliveryInfo-address-add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 29px;
+  background-color: #ffffff;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses-container .order-deliveryInfo-address-add h3 {
+  font-size: 17px;
+  margin: 0;
+  text-transform: uppercase;
+  color: #233043;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses-container .order-deliveryInfo-address-add button {
+  height: 48px;
+  width: 210px;
+  border: none;
+  outline: none;
+  color: #233043;
+  background-color: #fcdb10;
+  -webkit-transition: 0.3s ease-in all;
+  transition: 0.3s ease-in all;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses-container .order-deliveryInfo-address-add button h4 {
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 16px;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses-container .order-deliveryInfo-address-add button i {
+  font-size: 14px;
+  margin-right: 5px;
+  line-height: 16px;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses-container .order-deliveryInfo-address-add button:hover {
+  background-color: #233043;
+  color: #ffffff;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses-container .order-deliveryInfo-address-card-container {
+  background-color: #ffffff;
+  padding: 29px 46px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses-container .order-deliveryInfo-address-card-container .order-deliveryInfo-address-card-info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses-container .order-deliveryInfo-address-card-container .order-deliveryInfo-address-card-info-container .order-deliveryInfo-address-card-info-radio {
+  margin-right: 10px;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses-container .order-deliveryInfo-address-card-container .order-deliveryInfo-address-card-info-container .order-deliveryInfo-address-card-info h4,
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses-container .order-deliveryInfo-address-card-container .order-deliveryInfo-address-card-info-container .order-deliveryInfo-address-card-info p {
+  font-size: 16px;
+  font-style: normal;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses-container .order-deliveryInfo-address-card-container .order-deliveryInfo-address-card-info-container .order-deliveryInfo-address-card-info h4 {
+  color: #44546a;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses-container .order-deliveryInfo-address-card-container .order-deliveryInfo-address-card-info-container .order-deliveryInfo-address-card-info address {
+  margin: 8px 0;
+  color: #44546a;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses-container .order-deliveryInfo-address-card-container .order-deliveryInfo-address-card-info-container .order-deliveryInfo-address-card-info address + h4 {
+  color: #8a8a8a;
+  font-weight: normal;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses-container .order-deliveryInfo-address-card-container .order-deliveryInfo-address-card-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses-container .order-deliveryInfo-address-card-container .order-deliveryInfo-address-card-options a {
+  margin-left: 8px;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses-container .order-deliveryInfo-address-card-container .order-deliveryInfo-address-card-options button {
+  border: none;
+  width: 101px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  background-color: #fcdb10;
+  color: #233043;
+  -webkit-transition: 0.3s ease-in all;
+  transition: 0.3s ease-in all;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses-container .order-deliveryInfo-address-card-container .order-deliveryInfo-address-card-options button h4 {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 16px;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses-container .order-deliveryInfo-address-card-container .order-deliveryInfo-address-card-options button i {
+  font-size: 14px;
+  margin-right: 5px;
+  line-height: 16px;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses-container .order-deliveryInfo-address-card-container .order-deliveryInfo-address-card-options button:hover {
+  background-color: #233043;
+  color: #ffffff;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-summary-container {
+  width: 470px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #44546a;
+  color: #ffffff;
+  padding: 81px 64px 64px;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-summary-container .order-deliveryInfo-summary-header {
+  height: 44px;
+  margin-bottom: 16px;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-summary-container .order-deliveryInfo-summary-header h2 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-summary-container .order-deliveryInfo-summary-subTotal-container {
+  height: 75px;
+  border-bottom: 1px solid #fcdb10;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-summary-container .order-deliveryInfo-summary-subTotal-container .order-deliveryInfo-summary-subTotal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-summary-container .order-deliveryInfo-summary-subTotal-container .order-deliveryInfo-summary-subTotal h3 {
+  font-size: 10px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 13px;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-summary-container .order-deliveryInfo-summary-total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 63px;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-summary-container .order-deliveryInfo-summary-total h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-summary-container .order-deliveryInfo-summary-buttons button {
+  width: 100%;
+  height: 48px;
+  border: 1px solid #233043;
+  outline: none;
+  padding: 15px 0 17px;
+  color: #233043;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-summary-container .order-deliveryInfo-summary-buttons button h3 {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-summary-container .order-deliveryInfo-summary-buttons .order-deliveryInfo-summary-button-confirm {
+  background-color: #fcdb10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 8px;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-summary-container .order-deliveryInfo-summary-buttons .order-deliveryInfo-summary-button-confirm i {
+  font-size: 14px;
+  margin-right: 13px;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-summary-container .order-deliveryInfo-summary-buttons .order-deliveryInfo-summary-button-quote {
+  background-color: #ffffff;
+}
+/*# sourceMappingURL=styles.css.map */

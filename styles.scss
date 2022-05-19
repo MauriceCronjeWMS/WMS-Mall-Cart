@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+$color-primary: #233043;
+$color-secondary: #00000029;
+$color-tertiary: #44546a;
+$color-quaternary: #8a8a8a;
+$color-quinary: #ffffff;
+$color-senary: #fcdb10;
+$color-septenary: #f4f4f4;
+$color-octonary: #303030;
+$color-nonary: #5a6472;
+$color-denary: #535f6f;
+
+// Utitlity's
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+body {
+  background-color: $color-primary;
+}
+// Order Conformation Container
+.order-deliveryInfo-container {
+  max-width: 1340px;
+  margin: auto;
+  // background-color: $color-primary;
+  min-height: 100vh;
+  //   Order deliveryInfo header container
+  .order-deliveryInfo-header-container {
+    // Main header
+    .order-deliveryInfo-header-title {
+      background-color: $color-senary;
+      margin-top: 112px;
+      height: 96px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+        color: $color-primary;
+        font-size: 32px;
+        font-weight: bold;
+        line-height: 43px;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 25px 0 28px;
+      }
+    }
+    // Breadcrums container
+    .order-deliveryInfo-header-breadcrums-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      // Breadcrums
+      .order-deliveryInfo-header-breadcrums {
+        display: flex;
+        // background-color: magenta;
+        margin: 14px 0 16px;
+        h3 {
+          color: $color-quaternary;
+          font-size: 12px;
+          line-height: 16px;
+          margin-right: 8px;
+          font-weight: normal;
+          &.available {
+            color: $color-quinary;
+            cursor: pointer;
+          }
+        }
+      }
+      .order-deliveryInfo-header-breadcrums-button {
+        button {
+          // height: 48px;
+          // width: 101px;
+          border: none;
+          outline: none;
+          color: $color-quinary;
+          // background-color: $color-tertiary;
+          background-color: transparent;
+          transition: 0.3s ease-in all;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          h4 {
+            font-size: 12px;
+            // text-transform: uppercase;
+            line-height: 16px;
+            font-weight: normal;
+          }
+          i {
+            font-size: 12px;
+            margin-right: 5px;
+            line-height: 16px;
+          }
+          &:hover {
+            color: $color-quaternary;
+          }
+        }
+      }
+    }
+  }
+  // Addresses and summary container
+  .order-deliveryInfo-body-container {
+    display: flex;
+    gap: 13px;
+
+    // Addresses container
+    .order-deliveryInfo-addresses-container {
+      // background-color: $color-quinary;
+      width: 857px;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      // padding: 29px 0;
+
+      // Address add container
+      .order-deliveryInfo-address-add {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 29px;
+        background-color: $color-quinary;
+        // padding: 0 29px;
+        h3 {
+          font-size: 17px;
+          margin: 0;
+          text-transform: uppercase;
+          color: $color-primary;
+        }
+        button {
+          height: 48px;
+          width: 210px;
+          border: none;
+          outline: none;
+          color: $color-primary;
+          background-color: $color-senary;
+          transition: 0.3s ease-in all;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          h4 {
+            font-size: 12px;
+            text-transform: uppercase;
+            line-height: 16px;
+          }
+          i {
+            font-size: 14px;
+            margin-right: 5px;
+            line-height: 16px;
+          }
+          &:hover {
+            background-color: $color-primary;
+            color: $color-quinary;
+          }
+        }
+      }
+      // Address info and choice
+      .order-deliveryInfo-address-card-container {
+        background-color: $color-quinary;
+        // height: 210px;
+        padding: 29px 46px;
+        width: 100%;
+        // padding: 0 46px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .order-deliveryInfo-address-card-info-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .order-deliveryInfo-address-card-info-radio {
+            margin-right: 10px;
+          }
+          .order-deliveryInfo-address-card-info {
+            h4,
+            p {
+              font-size: 16px;
+              font-style: normal;
+            }
+            h4 {
+              color: $color-tertiary;
+            }
+            address {
+              margin: 8px 0;
+              color: $color-tertiary;
+              & + h4 {
+                color: $color-quaternary;
+                font-weight: normal;
+              }
+            }
+          }
+        }
+        .order-deliveryInfo-address-card-options {
+          display: flex;
+          a {
+            margin-left: 8px;
+          }
+          button {
+            border: none;
+            width: 101px;
+            height: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            background-color: $color-senary;
+            color: $color-primary;
+            transition: 0.3s ease-in all;
+            h4 {
+              font-size: 12px;
+              text-transform: uppercase;
+              margin: 0;
+              line-height: 16px;
+            }
+            i {
+              font-size: 14px;
+              margin-right: 5px;
+              line-height: 16px;
+            }
+            &:hover {
+              background-color: $color-primary;
+              color: $color-quinary;
+            }
+          }
+        }
+      }
+    }
+    .order-deliveryInfo-summary-container {
+      width: 470px;
+      height: fit-content;
+      background-color: $color-tertiary;
+      color: $color-quinary;
+      padding: 81px 64px 64px;
+
+      .order-deliveryInfo-summary-header {
+        height: 44px;
+        margin-bottom: 16px;
+
+        h2 {
+          font-size: 18px;
+          line-height: 24px;
+          font-weight: bold;
+          text-transform: uppercase;
+          margin: 0;
+        }
+      }
+
+      .order-deliveryInfo-summary-subTotal-container {
+        height: 75px;
+        border-bottom: 1px solid $color-senary;
+        padding-bottom: 16px;
+        margin-bottom: 16px;
+
+        .order-deliveryInfo-summary-subTotal {
+          display: flex;
+          justify-content: space-between;
+          padding-bottom: 10px;
+
+          h3 {
+            font-size: 10px;
+            font-weight: 300;
+            text-transform: uppercase;
+            margin: 0;
+            line-height: 13px;
+          }
+        }
+      }
+
+      .order-deliveryInfo-summary-total {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 63px;
+
+        h3 {
+          text-transform: uppercase;
+          font-size: 18px;
+          line-height: 24px;
+          margin: 0;
+        }
+      }
+
+      .order-deliveryInfo-summary-buttons {
+        button {
+          width: 100%;
+          height: 48px;
+          border: 1px solid $color-primary;
+          outline: none;
+          padding: 15px 0 17px;
+          color: $color-primary;
+
+          h3 {
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 16px;
+            margin: 0;
+            text-transform: uppercase;
+          }
+        }
+
+        .order-deliveryInfo-summary-button-confirm {
+          background-color: $color-senary;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 8px;
+
+          i {
+            font-size: 14px;
+            margin-right: 13px;
+          }
+        }
+
+        .order-deliveryInfo-summary-button-quote {
+          background-color: $color-quinary;
+        }
+      }
+    }
+  }
+}
