@@ -342,3 +342,329 @@ body {
     }
   }
 }
+// Delivery address component container
+.delivery-addressEdit-container {
+  max-width: 1340px;
+  margin: auto;
+  min-height: 100vh;
+  // Title- header
+  .delivery-addressEdit-header-container {
+    // Main header
+    .delivery-addressEdit-header-title {
+      background-color: $color-senary;
+      margin-top: 112px;
+      height: 96px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+        color: $color-primary;
+        font-size: 32px;
+        font-weight: bold;
+        line-height: 43px;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 25px 0 28px;
+      }
+    }
+    // Breadcrums and back button
+    .delivery-addressEdit-header-breadcrums-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      // Breadcrums
+      .delivery-addressEdit-header-breadcrums {
+        display: flex;
+        margin: 14px 0 16px;
+        h3 {
+          color: $color-quaternary;
+          font-size: 12px;
+          line-height: 16px;
+          margin-right: 8px;
+          font-weight: normal;
+          &.available {
+            color: $color-quinary;
+            cursor: pointer;
+          }
+        }
+      }
+      .delivery-addressEdit-header-breadcrums-button {
+        button {
+          // height: 48px;
+          // width: 101px;
+          border: none;
+          outline: none;
+          color: $color-quinary;
+          // background-color: $color-tertiary;
+          background-color: transparent;
+          transition: $animation-basic-primary;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          h4 {
+            font-size: 12px;
+            // text-transform: uppercase;
+            line-height: 16px;
+            font-weight: normal;
+          }
+          i {
+            font-size: 12px;
+            margin-right: 5px;
+            line-height: 16px;
+          }
+          &:hover {
+            color: $color-quaternary;
+          }
+        }
+      }
+    }
+  }
+  // New addresses and summary container
+  .delivery-addressEdit-body-container {
+    display: flex;
+    gap: 13px;
+
+    .delivery-addressEdit-body-info-container {
+      width: 857px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      .delivery-addressEdit-new-header-container {
+        background-color: $color-quinary;
+        padding: 29px;
+        h2 {
+          font-size: 17px;
+          margin: 0;
+          text-transform: uppercase;
+          color: $color-primary;
+          margin-bottom: 15px;
+        }
+        .delivery-addressEdit-types {
+          display: flex;
+          min-height: 48px;
+          gap: 16px;
+
+          .delivery-addressEdit-type {
+            width: 420.5px;
+            background-color: $color-septenary;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            input {
+            }
+          }
+        }
+      }
+
+      .delivery-addressEdit-new-container {
+        width: 857px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 29px;
+        background-color: $color-quinary;
+
+        .delivery-addressEdit-new-address-container {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+
+          .delivery-addressEdit-new-address {
+            display: flex;
+            gap: 16px;
+            .delivery-addressEdit-new-address-name {
+              background-color: $color-denary;
+              color: $color-quinary;
+              display: flex;
+              justify-content: flex-end;
+              align-items: center;
+              width: 360px;
+              height: 48px;
+              padding: 15px 24px 17px;
+
+              h4 {
+                font-size: 12px;
+                margin: 0;
+                height: 16px;
+              }
+            }
+            .delivery-addressEdit-new-address-info {
+              width: 512px;
+              min-height: 48px;
+              background-color: $color-septenary;
+              color: $color-primary;
+
+              h4 {
+                font-size: 12px;
+                margin: 0;
+                height: 16px;
+              }
+              input {
+                border: none;
+                background-color: $color-septenary;
+                height: 100%;
+                width: 100%;
+                outline: none;
+                font-size: 12px;
+                padding-left: 27px;
+              }
+              select {
+                border: none;
+                background-color: $color-septenary;
+                height: 100%;
+                width: 100%;
+                outline: none;
+                font-size: 12px;
+                padding-left: 27px;
+              }
+            }
+          }
+        }
+      }
+
+      .delivery-addressEdit-new-address-button {
+        display: flex;
+        justify-content: end;
+        gap: 5px;
+
+        .delivery-addressEdit-new-address-button-cancel {
+          button {
+            border: none;
+            width: 101px;
+            height: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            background-color: $color-septenary;
+            color: $color-primary;
+            transition: 0.3s ease-in all;
+            &:hover {
+              background-color: $color-primary;
+              color: $color-quinary;
+            }
+            i {
+              padding-right: 5px;
+            }
+          }
+        }
+
+        .delivery-addressEdit-new-address-button-save {
+          button {
+            border: none;
+            width: 101px;
+            height: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            background-color: $color-senary;
+            color: $color-primary;
+            transition: 0.3s ease-in all;
+            &:hover {
+              background-color: $color-primary;
+              color: $color-quinary;
+            }
+            i {
+              padding-right: 5px;
+            }
+          }
+        }
+      }
+    }
+    .order-deliveryInfo-summary-container {
+      width: 470px;
+      height: fit-content;
+      background-color: $color-tertiary;
+      color: $color-quinary;
+      padding: 81px 64px 64px;
+
+      .order-deliveryInfo-summary-header {
+        height: 44px;
+        margin-bottom: 16px;
+
+        h2 {
+          font-size: 18px;
+          line-height: 24px;
+          font-weight: bold;
+          text-transform: uppercase;
+          margin: 0;
+        }
+      }
+
+      .order-deliveryInfo-summary-subTotal-container {
+        height: 75px;
+        border-bottom: 1px solid $color-senary;
+        padding-bottom: 16px;
+        margin-bottom: 16px;
+
+        .order-deliveryInfo-summary-subTotal {
+          display: flex;
+          justify-content: space-between;
+          padding-bottom: 10px;
+
+          h3 {
+            font-size: 10px;
+            font-weight: 300;
+            text-transform: uppercase;
+            margin: 0;
+            line-height: 13px;
+          }
+        }
+      }
+
+      .order-deliveryInfo-summary-total {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 63px;
+
+        h3 {
+          text-transform: uppercase;
+          font-size: 18px;
+          line-height: 24px;
+          margin: 0;
+        }
+      }
+
+      .order-deliveryInfo-summary-buttons {
+        button {
+          width: 100%;
+          height: 48px;
+          border: 1px solid $color-primary;
+          outline: none;
+          padding: 15px 0 17px;
+          color: $color-primary;
+
+          h3 {
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 16px;
+            margin: 0;
+            text-transform: uppercase;
+          }
+        }
+
+        .order-deliveryInfo-summary-button-confirm {
+          background-color: $color-senary;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 8px;
+
+          i {
+            font-size: 14px;
+            margin-right: 13px;
+          }
+        }
+
+        .order-deliveryInfo-summary-button-quote {
+          background-color: $color-quinary;
+        }
+      }
+    }
+  }
+}

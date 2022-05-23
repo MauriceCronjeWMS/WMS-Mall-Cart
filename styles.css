@@ -408,4 +408,420 @@ body {
 .order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-summary-container .order-deliveryInfo-summary-buttons .order-deliveryInfo-summary-button-quote {
   background-color: #ffffff;
 }
+
+.delivery-addressEdit-container {
+  max-width: 1340px;
+  margin: auto;
+  min-height: 100vh;
+}
+
+.delivery-addressEdit-container .delivery-addressEdit-header-container .delivery-addressEdit-header-title {
+  background-color: #fcdb10;
+  margin-top: 112px;
+  height: 96px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.delivery-addressEdit-container .delivery-addressEdit-header-container .delivery-addressEdit-header-title h1 {
+  color: #233043;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 43px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 25px 0 28px;
+}
+
+.delivery-addressEdit-container .delivery-addressEdit-header-container .delivery-addressEdit-header-breadcrums-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.delivery-addressEdit-container .delivery-addressEdit-header-container .delivery-addressEdit-header-breadcrums-container .delivery-addressEdit-header-breadcrums {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 14px 0 16px;
+}
+
+.delivery-addressEdit-container .delivery-addressEdit-header-container .delivery-addressEdit-header-breadcrums-container .delivery-addressEdit-header-breadcrums h3 {
+  color: #8a8a8a;
+  font-size: 12px;
+  line-height: 16px;
+  margin-right: 8px;
+  font-weight: normal;
+}
+
+.delivery-addressEdit-container .delivery-addressEdit-header-container .delivery-addressEdit-header-breadcrums-container .delivery-addressEdit-header-breadcrums h3.available {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.delivery-addressEdit-container .delivery-addressEdit-header-container .delivery-addressEdit-header-breadcrums-container .delivery-addressEdit-header-breadcrums-button button {
+  border: none;
+  outline: none;
+  color: #ffffff;
+  background-color: transparent;
+  -webkit-transition: 0.3s ease-in all;
+  transition: 0.3s ease-in all;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.delivery-addressEdit-container .delivery-addressEdit-header-container .delivery-addressEdit-header-breadcrums-container .delivery-addressEdit-header-breadcrums-button button h4 {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: normal;
+}
+
+.delivery-addressEdit-container .delivery-addressEdit-header-container .delivery-addressEdit-header-breadcrums-container .delivery-addressEdit-header-breadcrums-button button i {
+  font-size: 12px;
+  margin-right: 5px;
+  line-height: 16px;
+}
+
+.delivery-addressEdit-container .delivery-addressEdit-header-container .delivery-addressEdit-header-breadcrums-container .delivery-addressEdit-header-breadcrums-button button:hover {
+  color: #8a8a8a;
+}
+
+.delivery-addressEdit-container .delivery-addressEdit-body-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 13px;
+}
+
+.delivery-addressEdit-container .delivery-addressEdit-body-container .delivery-addressEdit-body-info-container {
+  width: 857px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+
+.delivery-addressEdit-container .delivery-addressEdit-body-container .delivery-addressEdit-body-info-container .delivery-addressEdit-new-header-container {
+  background-color: #ffffff;
+  padding: 29px;
+}
+
+.delivery-addressEdit-container .delivery-addressEdit-body-container .delivery-addressEdit-body-info-container .delivery-addressEdit-new-header-container h2 {
+  font-size: 17px;
+  margin: 0;
+  text-transform: uppercase;
+  color: #233043;
+  margin-bottom: 15px;
+}
+
+.delivery-addressEdit-container .delivery-addressEdit-body-container .delivery-addressEdit-body-info-container .delivery-addressEdit-new-header-container .delivery-addressEdit-types {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 48px;
+  gap: 16px;
+}
+
+.delivery-addressEdit-container .delivery-addressEdit-body-container .delivery-addressEdit-body-info-container .delivery-addressEdit-new-header-container .delivery-addressEdit-types .delivery-addressEdit-type {
+  width: 420.5px;
+  background-color: #f4f4f4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.delivery-addressEdit-container .delivery-addressEdit-body-container .delivery-addressEdit-body-info-container .delivery-addressEdit-new-container {
+  width: 857px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  padding: 29px;
+  background-color: #ffffff;
+}
+
+.delivery-addressEdit-container .delivery-addressEdit-body-container .delivery-addressEdit-body-info-container .delivery-addressEdit-new-container .delivery-addressEdit-new-address-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+
+.delivery-addressEdit-container .delivery-addressEdit-body-container .delivery-addressEdit-body-info-container .delivery-addressEdit-new-container .delivery-addressEdit-new-address-container .delivery-addressEdit-new-address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+}
+
+.delivery-addressEdit-container .delivery-addressEdit-body-container .delivery-addressEdit-body-info-container .delivery-addressEdit-new-container .delivery-addressEdit-new-address-container .delivery-addressEdit-new-address .delivery-addressEdit-new-address-name {
+  background-color: #535f6f;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 360px;
+  height: 48px;
+  padding: 15px 24px 17px;
+}
+
+.delivery-addressEdit-container .delivery-addressEdit-body-container .delivery-addressEdit-body-info-container .delivery-addressEdit-new-container .delivery-addressEdit-new-address-container .delivery-addressEdit-new-address .delivery-addressEdit-new-address-name h4 {
+  font-size: 12px;
+  margin: 0;
+  height: 16px;
+}
+
+.delivery-addressEdit-container .delivery-addressEdit-body-container .delivery-addressEdit-body-info-container .delivery-addressEdit-new-container .delivery-addressEdit-new-address-container .delivery-addressEdit-new-address .delivery-addressEdit-new-address-info {
+  width: 512px;
+  min-height: 48px;
+  background-color: #f4f4f4;
+  color: #233043;
+}
+
+.delivery-addressEdit-container .delivery-addressEdit-body-container .delivery-addressEdit-body-info-container .delivery-addressEdit-new-container .delivery-addressEdit-new-address-container .delivery-addressEdit-new-address .delivery-addressEdit-new-address-info h4 {
+  font-size: 12px;
+  margin: 0;
+  height: 16px;
+}
+
+.delivery-addressEdit-container .delivery-addressEdit-body-container .delivery-addressEdit-body-info-container .delivery-addressEdit-new-container .delivery-addressEdit-new-address-container .delivery-addressEdit-new-address .delivery-addressEdit-new-address-info input {
+  border: none;
+  background-color: #f4f4f4;
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 12px;
+  padding-left: 27px;
+}
+
+.delivery-addressEdit-container .delivery-addressEdit-body-container .delivery-addressEdit-body-info-container .delivery-addressEdit-new-container .delivery-addressEdit-new-address-container .delivery-addressEdit-new-address .delivery-addressEdit-new-address-info select {
+  border: none;
+  background-color: #f4f4f4;
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 12px;
+  padding-left: 27px;
+}
+
+.delivery-addressEdit-container .delivery-addressEdit-body-container .delivery-addressEdit-body-info-container .delivery-addressEdit-new-address-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  gap: 5px;
+}
+
+.delivery-addressEdit-container .delivery-addressEdit-body-container .delivery-addressEdit-body-info-container .delivery-addressEdit-new-address-button .delivery-addressEdit-new-address-button-cancel button {
+  border: none;
+  width: 101px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  background-color: #f4f4f4;
+  color: #233043;
+  -webkit-transition: 0.3s ease-in all;
+  transition: 0.3s ease-in all;
+}
+
+.delivery-addressEdit-container .delivery-addressEdit-body-container .delivery-addressEdit-body-info-container .delivery-addressEdit-new-address-button .delivery-addressEdit-new-address-button-cancel button:hover {
+  background-color: #233043;
+  color: #ffffff;
+}
+
+.delivery-addressEdit-container .delivery-addressEdit-body-container .delivery-addressEdit-body-info-container .delivery-addressEdit-new-address-button .delivery-addressEdit-new-address-button-cancel button i {
+  padding-right: 5px;
+}
+
+.delivery-addressEdit-container .delivery-addressEdit-body-container .delivery-addressEdit-body-info-container .delivery-addressEdit-new-address-button .delivery-addressEdit-new-address-button-save button {
+  border: none;
+  width: 101px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  background-color: #fcdb10;
+  color: #233043;
+  -webkit-transition: 0.3s ease-in all;
+  transition: 0.3s ease-in all;
+}
+
+.delivery-addressEdit-container .delivery-addressEdit-body-container .delivery-addressEdit-body-info-container .delivery-addressEdit-new-address-button .delivery-addressEdit-new-address-button-save button:hover {
+  background-color: #233043;
+  color: #ffffff;
+}
+
+.delivery-addressEdit-container .delivery-addressEdit-body-container .delivery-addressEdit-body-info-container .delivery-addressEdit-new-address-button .delivery-addressEdit-new-address-button-save button i {
+  padding-right: 5px;
+}
+
+.delivery-addressEdit-container .delivery-addressEdit-body-container .order-deliveryInfo-summary-container {
+  width: 470px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #44546a;
+  color: #ffffff;
+  padding: 81px 64px 64px;
+}
+
+.delivery-addressEdit-container .delivery-addressEdit-body-container .order-deliveryInfo-summary-container .order-deliveryInfo-summary-header {
+  height: 44px;
+  margin-bottom: 16px;
+}
+
+.delivery-addressEdit-container .delivery-addressEdit-body-container .order-deliveryInfo-summary-container .order-deliveryInfo-summary-header h2 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.delivery-addressEdit-container .delivery-addressEdit-body-container .order-deliveryInfo-summary-container .order-deliveryInfo-summary-subTotal-container {
+  height: 75px;
+  border-bottom: 1px solid #fcdb10;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+
+.delivery-addressEdit-container .delivery-addressEdit-body-container .order-deliveryInfo-summary-container .order-deliveryInfo-summary-subTotal-container .order-deliveryInfo-summary-subTotal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.delivery-addressEdit-container .delivery-addressEdit-body-container .order-deliveryInfo-summary-container .order-deliveryInfo-summary-subTotal-container .order-deliveryInfo-summary-subTotal h3 {
+  font-size: 10px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 13px;
+}
+
+.delivery-addressEdit-container .delivery-addressEdit-body-container .order-deliveryInfo-summary-container .order-deliveryInfo-summary-total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 63px;
+}
+
+.delivery-addressEdit-container .delivery-addressEdit-body-container .order-deliveryInfo-summary-container .order-deliveryInfo-summary-total h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.delivery-addressEdit-container .delivery-addressEdit-body-container .order-deliveryInfo-summary-container .order-deliveryInfo-summary-buttons button {
+  width: 100%;
+  height: 48px;
+  border: 1px solid #233043;
+  outline: none;
+  padding: 15px 0 17px;
+  color: #233043;
+}
+
+.delivery-addressEdit-container .delivery-addressEdit-body-container .order-deliveryInfo-summary-container .order-deliveryInfo-summary-buttons button h3 {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.delivery-addressEdit-container .delivery-addressEdit-body-container .order-deliveryInfo-summary-container .order-deliveryInfo-summary-buttons .order-deliveryInfo-summary-button-confirm {
+  background-color: #fcdb10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 8px;
+}
+
+.delivery-addressEdit-container .delivery-addressEdit-body-container .order-deliveryInfo-summary-container .order-deliveryInfo-summary-buttons .order-deliveryInfo-summary-button-confirm i {
+  font-size: 14px;
+  margin-right: 13px;
+}
+
+.delivery-addressEdit-container .delivery-addressEdit-body-container .order-deliveryInfo-summary-container .order-deliveryInfo-summary-buttons .order-deliveryInfo-summary-button-quote {
+  background-color: #ffffff;
+}
 /*# sourceMappingURL=styles.css.map */
