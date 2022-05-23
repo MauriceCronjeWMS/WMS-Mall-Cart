@@ -87,9 +87,16 @@ body {
           line-height: 16px;
           margin-right: 8px;
           font-weight: normal;
-          &.available {
+          transition: $animation-basic-primary;
+          &.currentPage {
             color: $color-quinary;
             cursor: pointer;
+          }
+          &.availablePage {
+            cursor: pointer;
+            &:hover {
+              color: $color-quinary;
+            }
           }
         }
       }
@@ -423,8 +430,130 @@ body {
         }
       }
     }
+    .order-payments-container {
+      // background-color: $color-quinary;
+      width: 857px;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      // padding: 29px 0;
 
-    .order-payment-container {
+      // Address add container
+      .order-payment-add {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 29px;
+        background-color: $color-quinary;
+        // padding: 0 29px;
+        h3 {
+          font-size: 17px;
+          margin: 0;
+          text-transform: uppercase;
+          color: $color-primary;
+        }
+        button {
+          height: 48px;
+          width: 210px;
+          border: none;
+          outline: none;
+          color: $color-primary;
+          background-color: $color-senary;
+          transition: 0.3s ease-in all;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          h4 {
+            font-size: 12px;
+            text-transform: uppercase;
+            line-height: 16px;
+          }
+          i {
+            font-size: 14px;
+            margin-right: 5px;
+            line-height: 16px;
+          }
+          &:hover {
+            background-color: $color-primary;
+            color: $color-quinary;
+          }
+        }
+      }
+      // Address info and choice
+      .order-payment-card-container {
+        background-color: $color-quinary;
+        // height: 210px;
+        padding: 29px 46px;
+        width: 100%;
+        // padding: 0 46px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .order-payment-card-info-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .order-payment-card-info-radio {
+            margin-right: 10px;
+          }
+          .order-payment-card-info {
+            h4,
+            p {
+              font-size: 16px;
+              font-style: normal;
+            }
+            h4 {
+              color: $color-tertiary;
+            }
+            address {
+              margin: 8px 0;
+              color: $color-tertiary;
+              & + h4 {
+                color: $color-quaternary;
+                font-weight: normal;
+              }
+            }
+          }
+        }
+        .order-payment-card-options {
+          display: flex;
+
+          button {
+            margin-left: 8px;
+            border: none;
+            width: 101px;
+            height: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            background-color: $color-senary;
+            color: $color-primary;
+            transition: 0.3s ease-in all;
+            h4 {
+              font-size: 12px;
+              text-transform: uppercase;
+              margin: 0;
+              line-height: 16px;
+            }
+            i {
+              font-size: 14px;
+              margin-right: 5px;
+              line-height: 16px;
+            }
+            &:hover {
+              background-color: $color-primary;
+              color: $color-quinary;
+            }
+          }
+        }
+      }
+    }
+    .order-payment_edit-container {
+      display: none;
       width: 857px;
       min-height: 200px;
       background-color: lightseagreen;
@@ -566,7 +695,7 @@ body {
           line-height: 16px;
           margin-right: 8px;
           font-weight: normal;
-          &.available {
+          &.currentPage {
             color: $color-quinary;
             cursor: pointer;
           }

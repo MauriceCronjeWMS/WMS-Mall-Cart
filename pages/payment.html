@@ -19,9 +19,11 @@
         <!-- Breadcrums and back button -->
         <div class="order-deliveryInfo-header-breadcrums-container">
           <div class="order-deliveryInfo-header-breadcrums">
-            <h3 class="available">Delivery</h3>
+            <a href="../index.html">
+              <h3 class="availablePage">Delivery</h3>
+            </a>
             <h3>/</h3>
-            <h3>Payment</h3>
+            <h3 class="currentPage">Payment</h3>
             <h3>/</h3>
             <h3>Confirmation</h3>
           </div>
@@ -33,29 +35,29 @@
           </div>
         </div>
       </header>
-      <!-- Addresses section container-->
+      <!-- Payment section container-->
       <section class="order-deliveryInfo-body-container">
-        <!-- Addresses Selection View Container -->
+        <!-- Payment Selection View Container -->
         <section
-          class="order-deliveryInfo-addresses-container"
+          class="order-payments-container"
           id="AddressesSelectionViewContainer"
         >
-          <!-- Addresses Add -->
-          <header class="order-deliveryInfo-address-add">
-            <h3>Delivery Addresses</h3>
+          <!-- Payment Add -->
+          <header class="order-payment-add">
+            <h3>How would you like to pay?</h3>
             <button>
               <i class="fa-solid fa-plus"></i>
               <h4>Add Address</h4>
             </button>
           </header>
-          <!-- Address card container -->
-          <div class="order-deliveryInfo-address-card-container">
-            <!-- Address card left -->
-            <div class="order-deliveryInfo-address-card-info-container">
-              <div class="order-deliveryInfo-address-card-info-radio">
+          <!-- Payment card container -->
+          <div class="order-payment-card-container">
+            <!-- Payment card left -->
+            <div class="order-payment-card-info-container">
+              <div class="order-payment-card-info-radio">
                 <input type="radio" checked />
               </div>
-              <div class="order-deliveryInfo-address-card-info">
+              <div class="order-payment-card-info">
                 <h4>Maurice Cronje</h4>
                 <address>
                   <p>55 Roedolf</p>
@@ -66,7 +68,7 @@
               </div>
             </div>
             <!-- Address card right -->
-            <div class="order-deliveryInfo-address-card-options">
+            <div class="order-payment-card-options">
               <button>
                 <i class="fa-regular fa-trash-can"></i>
                 <h4>Delete</h4>
@@ -80,7 +82,7 @@
           </div>
         </section>
         <!-- Payment options container -->
-        <section class="order-payment-container"></section>
+        <section class="order-payment_edit-container"></section>
         <!-- Summary container -->
         <aside class="order-deliveryInfo-summary-container">
           <div class="order-deliveryInfo-summary-header">
@@ -105,7 +107,7 @@
             <h3>R 49 270.00</h3>
           </div>
           <div class="order-deliveryInfo-summary-buttons">
-            <a href="pages/payment.html">
+            <a href="../index.html">
               <button class="order-deliveryInfo-summary-button-confirm">
                 <i class="fas fa-shopping-cart"></i>
 

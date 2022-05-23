@@ -88,11 +88,21 @@ body {
   line-height: 16px;
   margin-right: 8px;
   font-weight: normal;
+  -webkit-transition: 0.3s ease-in all;
+  transition: 0.3s ease-in all;
 }
 
-.order-deliveryInfo-container .order-deliveryInfo-header-container .order-deliveryInfo-header-breadcrums-container .order-deliveryInfo-header-breadcrums h3.available {
+.order-deliveryInfo-container .order-deliveryInfo-header-container .order-deliveryInfo-header-breadcrums-container .order-deliveryInfo-header-breadcrums h3.currentPage {
   color: #ffffff;
   cursor: pointer;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-header-container .order-deliveryInfo-header-breadcrums-container .order-deliveryInfo-header-breadcrums h3.availablePage {
+  cursor: pointer;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-header-container .order-deliveryInfo-header-breadcrums-container .order-deliveryInfo-header-breadcrums h3.availablePage:hover {
+  color: #ffffff;
 }
 
 .order-deliveryInfo-container .order-deliveryInfo-header-container .order-deliveryInfo-header-breadcrums-container .order-deliveryInfo-header-breadcrums-button button {
@@ -529,7 +539,178 @@ body {
   color: #ffffff;
 }
 
-.order-deliveryInfo-container .order-deliveryInfo-body-container .order-payment-container {
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-payments-container {
+  width: 857px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-payments-container .order-payment-add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 29px;
+  background-color: #ffffff;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-payments-container .order-payment-add h3 {
+  font-size: 17px;
+  margin: 0;
+  text-transform: uppercase;
+  color: #233043;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-payments-container .order-payment-add button {
+  height: 48px;
+  width: 210px;
+  border: none;
+  outline: none;
+  color: #233043;
+  background-color: #fcdb10;
+  -webkit-transition: 0.3s ease-in all;
+  transition: 0.3s ease-in all;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-payments-container .order-payment-add button h4 {
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 16px;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-payments-container .order-payment-add button i {
+  font-size: 14px;
+  margin-right: 5px;
+  line-height: 16px;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-payments-container .order-payment-add button:hover {
+  background-color: #233043;
+  color: #ffffff;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-payments-container .order-payment-card-container {
+  background-color: #ffffff;
+  padding: 29px 46px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-payments-container .order-payment-card-container .order-payment-card-info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-payments-container .order-payment-card-container .order-payment-card-info-container .order-payment-card-info-radio {
+  margin-right: 10px;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-payments-container .order-payment-card-container .order-payment-card-info-container .order-payment-card-info h4,
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-payments-container .order-payment-card-container .order-payment-card-info-container .order-payment-card-info p {
+  font-size: 16px;
+  font-style: normal;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-payments-container .order-payment-card-container .order-payment-card-info-container .order-payment-card-info h4 {
+  color: #44546a;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-payments-container .order-payment-card-container .order-payment-card-info-container .order-payment-card-info address {
+  margin: 8px 0;
+  color: #44546a;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-payments-container .order-payment-card-container .order-payment-card-info-container .order-payment-card-info address + h4 {
+  color: #8a8a8a;
+  font-weight: normal;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-payments-container .order-payment-card-container .order-payment-card-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-payments-container .order-payment-card-container .order-payment-card-options button {
+  margin-left: 8px;
+  border: none;
+  width: 101px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  background-color: #fcdb10;
+  color: #233043;
+  -webkit-transition: 0.3s ease-in all;
+  transition: 0.3s ease-in all;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-payments-container .order-payment-card-container .order-payment-card-options button h4 {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 16px;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-payments-container .order-payment-card-container .order-payment-card-options button i {
+  font-size: 14px;
+  margin-right: 5px;
+  line-height: 16px;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-payments-container .order-payment-card-container .order-payment-card-options button:hover {
+  background-color: #233043;
+  color: #ffffff;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-payment_edit-container {
+  display: none;
   width: 857px;
   min-height: 200px;
   background-color: lightseagreen;
@@ -702,7 +883,7 @@ body {
   font-weight: normal;
 }
 
-.delivery-addressEdit-container .delivery-addressEdit-header-container .delivery-addressEdit-header-breadcrums-container .delivery-addressEdit-header-breadcrums h3.available {
+.delivery-addressEdit-container .delivery-addressEdit-header-container .delivery-addressEdit-header-breadcrums-container .delivery-addressEdit-header-breadcrums h3.currentPage {
   color: #ffffff;
   cursor: pointer;
 }
