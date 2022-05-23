@@ -484,11 +484,10 @@ body {
       }
       // Address info and choice
       .order-payment-card-container {
+        cursor: pointer;
         background-color: $color-quinary;
-        // height: 210px;
         padding: 29px 46px;
         width: 100%;
-        // padding: 0 46px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -500,53 +499,43 @@ body {
             margin-right: 10px;
           }
           .order-payment-card-info {
-            h4,
-            p {
-              font-size: 16px;
-              font-style: normal;
-            }
             h4 {
-              color: $color-tertiary;
+              font-size: 14px;
+              font-weight: normal;
+              font-style: normal;
+              color: $color-primary;
+              margin-bottom: 2px;
             }
-            address {
-              margin: 8px 0;
-              color: $color-tertiary;
-              & + h4 {
-                color: $color-quaternary;
-                font-weight: normal;
+            .order-payment-card-info-icons {
+              display: flex;
+              // justify-content: center;
+              align-items: center;
+              img {
+                height: 20px;
+                margin-right: 8px;
+                &.fnb-logo {
+                  height: 12px;
+                }
+                &:hover {
+                  cursor: pointer;
+                }
               }
             }
           }
         }
         .order-payment-card-options {
-          display: flex;
-
           button {
-            margin-left: 8px;
-            border: none;
-            width: 101px;
-            height: 48px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            background-color: $color-senary;
-            color: $color-primary;
-            transition: 0.3s ease-in all;
-            h4 {
-              font-size: 12px;
-              text-transform: uppercase;
-              margin: 0;
-              line-height: 16px;
+            background-color: transparent;
+            &:hover {
+              cursor: pointer;
             }
             i {
-              font-size: 14px;
-              margin-right: 5px;
-              line-height: 16px;
-            }
-            &:hover {
-              background-color: $color-primary;
-              color: $color-quinary;
+              font-size: 16px;
+              color: $color-tertiary;
+              transition: $animation-basic-primary;
+              &:hover {
+                color: $color-senary;
+              }
             }
           }
         }

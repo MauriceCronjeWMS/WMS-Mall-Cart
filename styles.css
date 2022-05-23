@@ -614,6 +614,7 @@ body {
 }
 
 .order-deliveryInfo-container .order-deliveryInfo-body-container .order-payments-container .order-payment-card-container {
+  cursor: pointer;
   background-color: #ffffff;
   padding: 29px 46px;
   width: 100%;
@@ -644,69 +645,53 @@ body {
   margin-right: 10px;
 }
 
-.order-deliveryInfo-container .order-deliveryInfo-body-container .order-payments-container .order-payment-card-container .order-payment-card-info-container .order-payment-card-info h4,
-.order-deliveryInfo-container .order-deliveryInfo-body-container .order-payments-container .order-payment-card-container .order-payment-card-info-container .order-payment-card-info p {
-  font-size: 16px;
-  font-style: normal;
-}
-
 .order-deliveryInfo-container .order-deliveryInfo-body-container .order-payments-container .order-payment-card-container .order-payment-card-info-container .order-payment-card-info h4 {
-  color: #44546a;
-}
-
-.order-deliveryInfo-container .order-deliveryInfo-body-container .order-payments-container .order-payment-card-container .order-payment-card-info-container .order-payment-card-info address {
-  margin: 8px 0;
-  color: #44546a;
-}
-
-.order-deliveryInfo-container .order-deliveryInfo-body-container .order-payments-container .order-payment-card-container .order-payment-card-info-container .order-payment-card-info address + h4 {
-  color: #8a8a8a;
+  font-size: 14px;
   font-weight: normal;
+  font-style: normal;
+  color: #233043;
+  margin-bottom: 2px;
 }
 
-.order-deliveryInfo-container .order-deliveryInfo-body-container .order-payments-container .order-payment-card-container .order-payment-card-options {
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-payments-container .order-payment-card-container .order-payment-card-info-container .order-payment-card-info .order-payment-card-info-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.order-deliveryInfo-container .order-deliveryInfo-body-container .order-payments-container .order-payment-card-container .order-payment-card-options button {
-  margin-left: 8px;
-  border: none;
-  width: 101px;
-  height: 48px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-payments-container .order-payment-card-container .order-payment-card-info-container .order-payment-card-info .order-payment-card-info-icons img {
+  height: 20px;
+  margin-right: 8px;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-payments-container .order-payment-card-container .order-payment-card-info-container .order-payment-card-info .order-payment-card-info-icons img.fnb-logo {
+  height: 12px;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-payments-container .order-payment-card-container .order-payment-card-info-container .order-payment-card-info .order-payment-card-info-icons img:hover {
   cursor: pointer;
-  background-color: #fcdb10;
-  color: #233043;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-payments-container .order-payment-card-container .order-payment-card-options button {
+  background-color: transparent;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-payments-container .order-payment-card-container .order-payment-card-options button:hover {
+  cursor: pointer;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-payments-container .order-payment-card-container .order-payment-card-options button i {
+  font-size: 16px;
+  color: #44546a;
   -webkit-transition: 0.3s ease-in all;
   transition: 0.3s ease-in all;
 }
 
-.order-deliveryInfo-container .order-deliveryInfo-body-container .order-payments-container .order-payment-card-container .order-payment-card-options button h4 {
-  font-size: 12px;
-  text-transform: uppercase;
-  margin: 0;
-  line-height: 16px;
-}
-
-.order-deliveryInfo-container .order-deliveryInfo-body-container .order-payments-container .order-payment-card-container .order-payment-card-options button i {
-  font-size: 14px;
-  margin-right: 5px;
-  line-height: 16px;
-}
-
-.order-deliveryInfo-container .order-deliveryInfo-body-container .order-payments-container .order-payment-card-container .order-payment-card-options button:hover {
-  background-color: #233043;
-  color: #ffffff;
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-payments-container .order-payment-card-container .order-payment-card-options button i:hover {
+  color: #fcdb10;
 }
 
 .order-deliveryInfo-container .order-deliveryInfo-body-container .order-payment_edit-container {

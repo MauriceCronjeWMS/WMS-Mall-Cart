@@ -45,41 +45,94 @@
           <!-- Payment Add -->
           <header class="order-payment-add">
             <h3>How would you like to pay?</h3>
-            <button>
-              <i class="fa-solid fa-plus"></i>
-              <h4>Add Address</h4>
-            </button>
           </header>
           <!-- Payment card container -->
-          <div class="order-payment-card-container">
+
+          <label class="order-payment-card-container">
             <!-- Payment card left -->
             <div class="order-payment-card-info-container">
               <div class="order-payment-card-info-radio">
-                <input type="radio" checked />
+                <input type="radio" checked name="payment-type" />
               </div>
               <div class="order-payment-card-info">
-                <h4>Maurice Cronje</h4>
-                <address>
-                  <p>55 Roedolf</p>
-                  <p>563 Rednose Avenue</p>
-                  <p>Raindeer, Centurion, 0420</p>
-                </address>
-                <h4>0761239876</h4>
+                <h4>Credit & Debit Card</h4>
+                <div class="order-payment-card-info-icons">
+                  <img src="../assets/Visa (1).svg" alt="visa payment type" />
+                  <img
+                    src="../assets/Mastercard.svg"
+                    alt="mastercard payment type"
+                  />
+                  <img
+                    src="../assets/Amex.svg"
+                    alt="american express payment type"
+                  />
+                  <img
+                    src="../assets/Diners.svg"
+                    alt="Diners express payment type"
+                  />
+                </div>
               </div>
             </div>
-            <!-- Address card right -->
+            <!-- Payment card right -->
             <div class="order-payment-card-options">
               <button>
-                <i class="fa-regular fa-trash-can"></i>
-                <h4>Delete</h4>
-              </button>
-
-              <button onclick="editAddressInfo()">
-                <i class="fa-regular fa-pen-to-square"></i>
-                <h4>Edit</h4>
+                <i class="fa-solid fa-circle-info"></i>
               </button>
             </div>
-          </div>
+          </label>
+          <label class="order-payment-card-container">
+            <!-- Payment card left -->
+            <div class="order-payment-card-info-container">
+              <div class="order-payment-card-info-radio">
+                <input type="radio" name="payment-type" />
+              </div>
+              <div class="order-payment-card-info">
+                <h4>EFT with PayFast</h4>
+
+                <div class="order-payment-card-info-icons">
+                  <img src="../assets/Absa.svg" alt="absa bank eft payment" />
+
+                  <img src="../assets/Nedbank.svg" alt="net bank eft payment" />
+
+                  <img
+                    src="../assets/Standard.svg"
+                    alt="standard bank eft payment"
+                  />
+                  <img
+                    src="../assets/Capitec.svg"
+                    alt="standard bank eft payment"
+                  />
+                  <img
+                    src="../assets/Investec.svg"
+                    alt="standard bank eft payment"
+                  />
+                  <img
+                    src="../assets/TymeBank.svg"
+                    alt="standard bank eft payment"
+                  />
+                  <img
+                    src="../assets/AfricanBank.svg"
+                    alt="standard bank eft payment"
+                  />
+                  <img
+                    src="../assets/Bidvest.svg"
+                    alt="standard bank eft payment"
+                  />
+                  <img
+                    class="fnb-logo"
+                    src="../assets/fnbinitials.svg"
+                    alt="standard bank eft payment"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- Payment card right -->
+            <div class="order-payment-card-options">
+              <button>
+                <i class="fa-solid fa-circle-info"></i>
+              </button>
+            </div>
+          </label>
         </section>
         <!-- Payment options container -->
         <section class="order-payment_edit-container"></section>
