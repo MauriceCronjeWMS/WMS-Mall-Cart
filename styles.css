@@ -26,6 +26,12 @@ body {
   background-color: #233043;
 }
 
+.force-show {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
 .order-deliveryInfo-container {
   max-width: 1340px;
   margin: auto;
@@ -136,9 +142,7 @@ body {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -262,11 +266,8 @@ body {
   display: flex;
 }
 
-.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses-container .order-deliveryInfo-address-card-container .order-deliveryInfo-address-card-options a {
-  margin-left: 8px;
-}
-
 .order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses-container .order-deliveryInfo-address-card-container .order-deliveryInfo-address-card-options button {
+  margin-left: 8px;
   border: none;
   width: 101px;
   height: 48px;
@@ -300,6 +301,231 @@ body {
 }
 
 .order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses-container .order-deliveryInfo-address-card-container .order-deliveryInfo-address-card-options button:hover {
+  background-color: #233043;
+  color: #ffffff;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses_edit-container {
+  width: 857px;
+  height: 200px;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses_edit-container .order-deliveryInfo-addresses_edit-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 29px;
+  background-color: #ffffff;
+  gap: 16px;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses_edit-container .order-deliveryInfo-addresses_edit-header h3 {
+  font-size: 17px;
+  margin: 0;
+  text-transform: uppercase;
+  color: #233043;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses_edit-container .order-deliveryInfo-addresses_edit-header .order-deliveryInfo-addresses_edit-from-radioButtons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses_edit-container .order-deliveryInfo-addresses_edit-header .order-deliveryInfo-addresses_edit-from-radioButtons-container .order-deliveryInfo-addresses_edit-from-radioButton-container {
+  background-color: #f4f4f4;
+  color: #233043;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: calc(50% - 8px);
+  height: 48px;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses_edit-container .order-deliveryInfo-addresses_edit-header .order-deliveryInfo-addresses_edit-from-radioButtons-container .order-deliveryInfo-addresses_edit-from-radioButton-container h4 {
+  font-size: 12px;
+  margin: 0;
+  height: 16px;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses_edit-container .order-deliveryInfo-addresses_edit-header .order-deliveryInfo-addresses_edit-from-radioButtons-container .order-deliveryInfo-addresses_edit-from-radioButton-container label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 24px 17px;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.3s ease-in all;
+  transition: 0.3s ease-in all;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses_edit-container .order-deliveryInfo-addresses_edit-header .order-deliveryInfo-addresses_edit-from-radioButtons-container .order-deliveryInfo-addresses_edit-from-radioButton-container label:hover {
+  cursor: pointer;
+  background-color: #535f6f;
+  color: #ffffff;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses_edit-container .order-deliveryInfo-addresses_edit-header .order-deliveryInfo-addresses_edit-from-radioButtons-container .order-deliveryInfo-addresses_edit-from-radioButton-container label input {
+  margin-right: 8px;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses_edit-container .order-deliveryInfo-addresses_edit-header .order-deliveryInfo-addresses_edit-from-radioButtons-container .order-deliveryInfo-addresses_edit-from-radioButton-container label.checked {
+  background-color: #535f6f;
+  color: #ffffff;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses_edit-container .order-deliveryInfo-addresses_edit-from-container {
+  background-color: #ffffff;
+  padding: 29px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses_edit-container .order-deliveryInfo-addresses_edit-from-container .order-deliveryInfo-addresses_edit-from-fields-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses_edit-container .order-deliveryInfo-addresses_edit-from-container .order-deliveryInfo-addresses_edit-from-fields-container #addressEditTypeBusiness {
+  display: none;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses_edit-container .order-deliveryInfo-addresses_edit-from-container .order-deliveryInfo-addresses_edit-from-fields-container .order-deliveryInfo-addresses_edit-from-field-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses_edit-container .order-deliveryInfo-addresses_edit-from-container .order-deliveryInfo-addresses_edit-from-fields-container .order-deliveryInfo-addresses_edit-from-field-container .order-deliveryInfo-addresses_edit-from-field-name {
+  background-color: #535f6f;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 360px;
+  height: 48px;
+  padding: 15px 24px 17px;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses_edit-container .order-deliveryInfo-addresses_edit-from-container .order-deliveryInfo-addresses_edit-from-fields-container .order-deliveryInfo-addresses_edit-from-field-container .order-deliveryInfo-addresses_edit-from-field-name h4 {
+  font-size: 12px;
+  margin: 0;
+  height: 16px;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses_edit-container .order-deliveryInfo-addresses_edit-from-container .order-deliveryInfo-addresses_edit-from-fields-container .order-deliveryInfo-addresses_edit-from-field-container .order-deliveryInfo-addresses_edit-from-field-info {
+  width: 512px;
+  min-height: 48px;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses_edit-container .order-deliveryInfo-addresses_edit-from-container .order-deliveryInfo-addresses_edit-from-fields-container .order-deliveryInfo-addresses_edit-from-field-container .order-deliveryInfo-addresses_edit-from-field-info input {
+  width: 100%;
+  height: 100%;
+  padding: 15px 24px 17px;
+  background-color: #f4f4f4;
+  color: #233043;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  margin: 0;
+  line-height: 16px;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses_edit-container .order-deliveryInfo-addresses_edit-from-container .order-deliveryInfo-addresses_edit-from-fields-container .order-deliveryInfo-addresses_edit-from-field-container .order-deliveryInfo-addresses_edit-from-field-info select {
+  padding: 15px 24px 17px;
+  width: 100%;
+  height: 100%;
+  background-color: #f4f4f4;
+  color: #233043;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  margin: 0;
+  line-height: 16px;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses_edit-container .order-deliveryInfo-addresses_edit-from-container .order-deliveryInfo-addresses_edit-from-buttons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 16px;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses_edit-container .order-deliveryInfo-addresses_edit-from-container .order-deliveryInfo-addresses_edit-from-buttons-container button {
+  border: none;
+  width: 101px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  background-color: #fcdb10;
+  color: #233043;
+  -webkit-transition: 0.3s ease-in all;
+  transition: 0.3s ease-in all;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses_edit-container .order-deliveryInfo-addresses_edit-from-container .order-deliveryInfo-addresses_edit-from-buttons-container button.order-deliveryInfo-addresses_edit-from-button-cancel {
+  background-color: #f4f4f4;
+  color: #233043;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses_edit-container .order-deliveryInfo-addresses_edit-from-container .order-deliveryInfo-addresses_edit-from-buttons-container button h4 {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 16px;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses_edit-container .order-deliveryInfo-addresses_edit-from-container .order-deliveryInfo-addresses_edit-from-buttons-container button i {
+  font-size: 14px;
+  margin-right: 5px;
+  line-height: 16px;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses_edit-container .order-deliveryInfo-addresses_edit-from-container .order-deliveryInfo-addresses_edit-from-buttons-container button:hover {
   background-color: #233043;
   color: #ffffff;
 }
