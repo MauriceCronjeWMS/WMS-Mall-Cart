@@ -256,7 +256,7 @@ body {
     // Address edit container
     .order-deliveryInfo-addresses_edit-container {
       width: 857px;
-      height: 200px;
+      // height: 200px;
       display: none;
       flex-direction: column;
       gap: 10px;
@@ -423,6 +423,12 @@ body {
         }
       }
     }
+
+    .order-payment-container {
+      width: 857px;
+      min-height: 200px;
+      background-color: lightseagreen;
+    }
     .order-deliveryInfo-summary-container {
       width: 470px;
       height: fit-content;
@@ -505,6 +511,10 @@ body {
           i {
             font-size: 14px;
             margin-right: 13px;
+          }
+
+          &:hover {
+            cursor: pointer;
           }
         }
 

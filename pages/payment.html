@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css" />
+    <title>WMS-Mall</title>
+  </head>
+  <body>
+    <!-- Delivery component container -->
+    <section class="order-deliveryInfo-container">
+      <!-- Titel and breadcrums -->
+      <header class="order-deliveryInfo-header-container">
+        <!-- Page title -->
+        <div class="order-deliveryInfo-header-title">
+          <h1>Delivery</h1>
+        </div>
+        <!-- Breadcrums and back button -->
+        <div class="order-deliveryInfo-header-breadcrums-container">
+          <div class="order-deliveryInfo-header-breadcrums">
+            <h3 class="available">Delivery</h3>
+            <h3>/</h3>
+            <h3>Payment</h3>
+            <h3>/</h3>
+            <h3>Confirmation</h3>
+          </div>
+          <div class="order-deliveryInfo-header-breadcrums-button">
+            <button>
+              <i class="fa-solid fa-cart-shopping"></i>
+              <h4>Back to Cart</h4>
+            </button>
+          </div>
+        </div>
+      </header>
+      <!-- Addresses section container-->
+      <section class="order-deliveryInfo-body-container">
+        <!-- Addresses Selection View Container -->
+        <section
+          class="order-deliveryInfo-addresses-container"
+          id="AddressesSelectionViewContainer"
+        >
+          <!-- Addresses Add -->
+          <header class="order-deliveryInfo-address-add">
+            <h3>Delivery Addresses</h3>
+            <button>
+              <i class="fa-solid fa-plus"></i>
+              <h4>Add Address</h4>
+            </button>
+          </header>
+          <!-- Address card container -->
+          <div class="order-deliveryInfo-address-card-container">
+            <!-- Address card left -->
+            <div class="order-deliveryInfo-address-card-info-container">
+              <div class="order-deliveryInfo-address-card-info-radio">
+                <input type="radio" checked />
+              </div>
+              <div class="order-deliveryInfo-address-card-info">
+                <h4>Maurice Cronje</h4>
+                <address>
+                  <p>55 Roedolf</p>
+                  <p>563 Rednose Avenue</p>
+                  <p>Raindeer, Centurion, 0420</p>
+                </address>
+                <h4>0761239876</h4>
+              </div>
+            </div>
+            <!-- Address card right -->
+            <div class="order-deliveryInfo-address-card-options">
+              <button>
+                <i class="fa-regular fa-trash-can"></i>
+                <h4>Delete</h4>
+              </button>
+
+              <button onclick="editAddressInfo()">
+                <i class="fa-regular fa-pen-to-square"></i>
+                <h4>Edit</h4>
+              </button>
+            </div>
+          </div>
+        </section>
+        <!-- Payment options container -->
+        <section class="order-payment-container"></section>
+        <!-- Summary container -->
+        <aside class="order-deliveryInfo-summary-container">
+          <div class="order-deliveryInfo-summary-header">
+            <h2>Order Summary</h2>
+          </div>
+          <div class="order-deliveryInfo-summary-subTotal-container">
+            <div class="order-deliveryInfo-summary-subTotal">
+              <h3>subtotal</h3>
+              <h3>R 43 990.00</h3>
+            </div>
+            <div class="order-deliveryInfo-summary-subTotal">
+              <h3>ESTIMATED DELIVERY & HANDLING</h3>
+              <h3>R 1280.00</h3>
+            </div>
+            <div class="order-deliveryInfo-summary-subTotal">
+              <h3>VAT.</h3>
+              <h3>R 4000.00</h3>
+            </div>
+          </div>
+          <div class="order-deliveryInfo-summary-total">
+            <h3>total</h3>
+            <h3>R 49 270.00</h3>
+          </div>
+          <div class="order-deliveryInfo-summary-buttons">
+            <a href="pages/payment.html">
+              <button class="order-deliveryInfo-summary-button-confirm">
+                <i class="fas fa-shopping-cart"></i>
+
+                <h3>Continue</h3>
+              </button>
+            </a>
+            <button class="order-deliveryInfo-summary-button-quote">
+              <h3>DOWNLOAD QUOTe</h3>
+            </button>
+          </div>
+        </aside>
+      </section>
+    </section>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/23a0b1c1e7.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="../index.js"></script>
+</html>

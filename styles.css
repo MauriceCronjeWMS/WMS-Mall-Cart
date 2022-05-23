@@ -307,7 +307,6 @@ body {
 
 .order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-addresses_edit-container {
   width: 857px;
-  height: 200px;
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -530,6 +529,12 @@ body {
   color: #ffffff;
 }
 
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-payment-container {
+  width: 857px;
+  min-height: 200px;
+  background-color: lightseagreen;
+}
+
 .order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-summary-container {
   width: 470px;
   height: -webkit-fit-content;
@@ -629,6 +634,10 @@ body {
 .order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-summary-container .order-deliveryInfo-summary-buttons .order-deliveryInfo-summary-button-confirm i {
   font-size: 14px;
   margin-right: 13px;
+}
+
+.order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-summary-container .order-deliveryInfo-summary-buttons .order-deliveryInfo-summary-button-confirm:hover {
+  cursor: pointer;
 }
 
 .order-deliveryInfo-container .order-deliveryInfo-body-container .order-deliveryInfo-summary-container .order-deliveryInfo-summary-buttons .order-deliveryInfo-summary-button-quote {
