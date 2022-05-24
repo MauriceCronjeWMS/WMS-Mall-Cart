@@ -890,8 +890,14 @@ body {
 }
 
 .order-deliveryInfo-container .order-deliveryInfo-body-container .testing-main-container {
-  background-color: lightblue;
-  height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
 }
 
 .order-deliveryInfo-container .order-deliveryInfo-body-container .testing-main-container .testing-aside-container {
@@ -1421,9 +1427,5 @@ body {
 
 .delivery-addressEdit-container .delivery-addressEdit-body-container .order-deliveryInfo-summary-container .order-deliveryInfo-summary-buttons .order-deliveryInfo-summary-button-quote {
   background-color: #ffffff;
-}
-
-.delivery-addressEdit-container .order-payment-aside-container {
-  background-color: lightcoral;
 }
 /*# sourceMappingURL=styles.css.map */

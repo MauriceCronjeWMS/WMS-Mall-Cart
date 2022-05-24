@@ -685,8 +685,9 @@ body {
       }
     }
     .testing-main-container {
-      background-color: lightblue;
-      height: 800px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
       .testing-aside-container {
         background-color: lightgreen;
       }
