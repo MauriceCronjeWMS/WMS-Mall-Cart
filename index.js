@@ -25,3 +25,24 @@ function addressEditType() {
     field.classList.toggle("force-show");
   }
 }
+
+function paymentOptionType() {
+  let Input1 = document.getElementById("paymentTypeCredit");
+  let Input2 = document.getElementById("paymentTypePayFast");
+  let Input1Container = document.getElementById("paymentTypeCreditContainer");
+  let Input2Container = document.getElementById("paymentTypePayFastContainer");
+
+  if (Input1.checked) {
+    Input1Container.classList.toggle("checked");
+  } else if (Input2.checked) {
+    Input2Container.classList.toggle("checked");
+  }
+}
+
+function paymentOptionTypeForm() {
+  let x = document.getElementById("PaymentOptionsContainer");
+  let y = document.getElementById("PaymentOptionsTypeContainer");
+
+  x.classList.toggle("force-show");
+  y.classList.toggle("force-show");
+}

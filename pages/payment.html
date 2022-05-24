@@ -14,7 +14,7 @@
       <header class="order-deliveryInfo-header-container">
         <!-- Page title -->
         <div class="order-deliveryInfo-header-title">
-          <h1>Delivery</h1>
+          <h1>Payment</h1>
         </div>
         <!-- Breadcrums and back button -->
         <div class="order-deliveryInfo-header-breadcrums-container">
@@ -39,8 +39,8 @@
       <section class="order-deliveryInfo-body-container">
         <!-- Payment Selection View Container -->
         <section
-          class="order-payments-container"
-          id="AddressesSelectionViewContainer"
+          class="order-payments-container force-show"
+          id="PaymentOptionsContainer"
         >
           <!-- Payment Add -->
           <header class="order-payment-add">
@@ -48,11 +48,20 @@
           </header>
           <!-- Payment card container -->
 
-          <label class="order-payment-card-container">
+          <label
+            class="order-payment-card-container checked"
+            onclick="paymentOptionType()"
+            id="paymentTypeCreditContainer"
+          >
             <!-- Payment card left -->
             <div class="order-payment-card-info-container">
               <div class="order-payment-card-info-radio">
-                <input type="radio" checked name="payment-type" />
+                <input
+                  type="radio"
+                  checked
+                  name="payment-type"
+                  id="paymentTypeCredit"
+                />
               </div>
               <div class="order-payment-card-info">
                 <h4>Credit & Debit Card</h4>
@@ -80,11 +89,19 @@
               </button>
             </div>
           </label>
-          <label class="order-payment-card-container">
+          <label
+            class="order-payment-card-container"
+            onclick="paymentOptionType()"
+            id="paymentTypePayFastContainer"
+          >
             <!-- Payment card left -->
             <div class="order-payment-card-info-container">
               <div class="order-payment-card-info-radio">
-                <input type="radio" name="payment-type" />
+                <input
+                  type="radio"
+                  name="payment-type"
+                  id="paymentTypePayFast"
+                />
               </div>
               <div class="order-payment-card-info">
                 <h4>EFT with PayFast</h4>
@@ -135,11 +152,74 @@
           </label>
         </section>
         <!-- Payment options container -->
-        <section class="order-payment_edit-container"></section>
-        <!-- Order Summary and Order Review -->
-        <div class="order-payment-aside-container">
-          <!-- Summary container -->
-          <aside class="order-deliveryInfo-summary-container">
+        <section
+          class="order-payment-options-container"
+          id="PaymentOptionsTypeContainer"
+        >
+          <div class="order-payment-options-header">
+            <h3>Add New Card</h3>
+          </div>
+          <div class="order-payment-options-from-container">
+            <div class="order-payment-options-from-fields-container">
+              <div class="order-payment-options-from-field-container">
+                <div class="order-payment-options-from-field-name">
+                  <h4>Card Description</h4>
+                </div>
+                <div class="order-payment-options-from-field-info">
+                  <input type="text" name="card_description" />
+                </div>
+              </div>
+              <div class="order-payment-options-from-field-container">
+                <div class="order-payment-options-from-field-name">
+                  <h4>Name on Card</h4>
+                </div>
+                <div class="order-payment-options-from-field-info">
+                  <input type="text" name="name_on_card" />
+                </div>
+              </div>
+              <div class="order-payment-options-from-field-container">
+                <div class="order-payment-options-from-field-name">
+                  <h4>Card Number</h4>
+                </div>
+                <div class="order-payment-options-from-field-info">
+                  <input type="text" name="card_number" />
+                </div>
+              </div>
+              <div class="order-payment-options-from-field-container">
+                <div class="order-payment-options-from-field-name">
+                  <h4>Expiry Date</h4>
+                </div>
+                <div class="order-payment-options-from-field-info">
+                  <input type="month" name="expiry_date" />
+                </div>
+              </div>
+              <div class="order-payment-options-from-field-container">
+                <div class="order-payment-options-from-field-name">
+                  <h4>CVV</h4>
+                </div>
+                <div class="order-payment-options-from-field-info">
+                  <input type="text" name="cvv" />
+                </div>
+              </div>
+              <div class="order-payment-options-from-buttons-container">
+                <button
+                  class="order-payment-options-from-button-cancel"
+                  onclick="paymentOptionTypeForm()"
+                >
+                  <i class="fa-solid fa-ban"></i>
+                  <h4>Cancel</h4>
+                </button>
+                <button onclick="paymentOptionTypeForm()">
+                  <i class="fa-solid fa-file-invoice"></i>
+                  <h4>Pay R 49 270.00</h4>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Summary container -->
+        <aside class="testing-main-container">
+          <div class="order-deliveryInfo-summary-container">
             <div class="order-deliveryInfo-summary-header">
               <h2>Order Summary</h2>
             </div>
@@ -162,54 +242,20 @@
               <h3>R 49 270.00</h3>
             </div>
             <div class="order-deliveryInfo-summary-buttons">
-              <a href="../index.html">
-                <button class="order-deliveryInfo-summary-button-confirm">
-                  <i class="fas fa-shopping-cart"></i>
-
-                  <h3>Continue</h3>
-                </button>
-              </a>
+              <button
+                class="order-deliveryInfo-summary-button-confirm"
+                onclick="paymentOptionTypeForm()"
+              >
+                <i class="fas fa-shopping-cart"></i>
+                <h3>Continue</h3>
+              </button>
               <button class="order-deliveryInfo-summary-button-quote">
                 <h3>DOWNLOAD QUOTe</h3>
               </button>
             </div>
-          </aside>
-          <!-- Order Review -->
-          <div class="order-payment-orderReview">
-            <h2>Order Review</h2>
-            <div class="order-payment-orderReview-method">
-              <div class="order-payment-orderReview-method-delivery">
-                <h2>Delivery Method</h2>
-                <h3>Delivery</h3>
-              </div>
-              <button>
-                <h4>Change</h4>
-              </button>
-            </div>
-            <div class="order-payment-orderReview-address">
-              <h2>Delivery Address</h2>
-              <h4>Jeandre</h4>
-              <address>
-                <p>21 Carlsworld</p>
-                <p>14 Tamboti Street</p>
-                <p>carlsworld, Midrand 0256</p>
-              </address>
-              <h4>0827970330</h4>
-            </div>
-            <div class="order-payment-orderReview-delivery">
-              <div class="order-payment-orderReview-delivery-date">
-                <h2>Delivery By 03 June 2022</h2>
-                <h3>Standard Delivery (First Delivery Free)</h3>
-              </div>
-              <div class="order-payment-orderReview-delivery-items">
-                <div class="order-payment-orderReview-delivery-items-info">
-                  <h2>Items For Delivery</h2>
-                  <button>Show Details</button>
-                </div>
-              </div>
-            </div>
           </div>
-        </div>
+          <div class="testing-aside-container">Some content</div>
+        </aside>
       </section>
     </section>
   </body>
