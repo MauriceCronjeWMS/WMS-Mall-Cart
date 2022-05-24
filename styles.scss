@@ -547,6 +547,7 @@ body {
       min-height: 200px;
       background-color: lightseagreen;
     }
+
     .order-deliveryInfo-summary-container {
       width: 470px;
       height: fit-content;
@@ -877,6 +878,7 @@ body {
         }
       }
     }
+
     .order-deliveryInfo-summary-container {
       width: 470px;
       height: fit-content;
@@ -967,5 +969,8 @@ body {
         }
       }
     }
+  }
+  .order-payment-aside-container {
+    background-color: lightcoral;
   }
 }

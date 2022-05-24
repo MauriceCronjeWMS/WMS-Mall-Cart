@@ -136,42 +136,80 @@
         </section>
         <!-- Payment options container -->
         <section class="order-payment_edit-container"></section>
-        <!-- Summary container -->
-        <aside class="order-deliveryInfo-summary-container">
-          <div class="order-deliveryInfo-summary-header">
-            <h2>Order Summary</h2>
-          </div>
-          <div class="order-deliveryInfo-summary-subTotal-container">
-            <div class="order-deliveryInfo-summary-subTotal">
-              <h3>subtotal</h3>
-              <h3>R 43 990.00</h3>
+        <!-- Order Summary and Order Review -->
+        <div class="order-payment-aside-container">
+          <!-- Summary container -->
+          <aside class="order-deliveryInfo-summary-container">
+            <div class="order-deliveryInfo-summary-header">
+              <h2>Order Summary</h2>
             </div>
-            <div class="order-deliveryInfo-summary-subTotal">
-              <h3>ESTIMATED DELIVERY & HANDLING</h3>
-              <h3>R 1280.00</h3>
+            <div class="order-deliveryInfo-summary-subTotal-container">
+              <div class="order-deliveryInfo-summary-subTotal">
+                <h3>subtotal</h3>
+                <h3>R 43 990.00</h3>
+              </div>
+              <div class="order-deliveryInfo-summary-subTotal">
+                <h3>ESTIMATED DELIVERY & HANDLING</h3>
+                <h3>R 1280.00</h3>
+              </div>
+              <div class="order-deliveryInfo-summary-subTotal">
+                <h3>VAT.</h3>
+                <h3>R 4000.00</h3>
+              </div>
             </div>
-            <div class="order-deliveryInfo-summary-subTotal">
-              <h3>VAT.</h3>
-              <h3>R 4000.00</h3>
+            <div class="order-deliveryInfo-summary-total">
+              <h3>total</h3>
+              <h3>R 49 270.00</h3>
             </div>
-          </div>
-          <div class="order-deliveryInfo-summary-total">
-            <h3>total</h3>
-            <h3>R 49 270.00</h3>
-          </div>
-          <div class="order-deliveryInfo-summary-buttons">
-            <a href="../index.html">
-              <button class="order-deliveryInfo-summary-button-confirm">
-                <i class="fas fa-shopping-cart"></i>
+            <div class="order-deliveryInfo-summary-buttons">
+              <a href="../index.html">
+                <button class="order-deliveryInfo-summary-button-confirm">
+                  <i class="fas fa-shopping-cart"></i>
 
-                <h3>Continue</h3>
+                  <h3>Continue</h3>
+                </button>
+              </a>
+              <button class="order-deliveryInfo-summary-button-quote">
+                <h3>DOWNLOAD QUOTe</h3>
               </button>
-            </a>
-            <button class="order-deliveryInfo-summary-button-quote">
-              <h3>DOWNLOAD QUOTe</h3>
-            </button>
+            </div>
+          </aside>
+          <!-- Order Review -->
+          <div class="order-payment-orderReview">
+            <h2>Order Review</h2>
+            <div class="order-payment-orderReview-method">
+              <div class="order-payment-orderReview-method-delivery">
+                <h2>Delivery Method</h2>
+                <h3>Delivery</h3>
+              </div>
+              <button>
+                <h4>Change</h4>
+              </button>
+            </div>
+            <div class="order-payment-orderReview-address">
+              <h2>Delivery Address</h2>
+              <h4>Jeandre</h4>
+              <address>
+                <p>21 Carlsworld</p>
+                <p>14 Tamboti Street</p>
+                <p>carlsworld, Midrand 0256</p>
+              </address>
+              <h4>0827970330</h4>
+            </div>
+            <div class="order-payment-orderReview-delivery">
+              <div class="order-payment-orderReview-delivery-date">
+                <h2>Delivery By 03 June 2022</h2>
+                <h3>Standard Delivery (First Delivery Free)</h3>
+              </div>
+              <div class="order-payment-orderReview-delivery-items">
+                <div class="order-payment-orderReview-delivery-items-info">
+                  <h2>Items For Delivery</h2>
+                  <button>Show Details</button>
+                </div>
+              </div>
+            </div>
           </div>
-        </aside>
+        </div>
       </section>
     </section>
   </body>

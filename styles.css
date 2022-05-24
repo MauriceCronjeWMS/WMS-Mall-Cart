@@ -1225,4 +1225,8 @@ body {
 .delivery-addressEdit-container .delivery-addressEdit-body-container .order-deliveryInfo-summary-container .order-deliveryInfo-summary-buttons .order-deliveryInfo-summary-button-quote {
   background-color: #ffffff;
 }
+
+.delivery-addressEdit-container .order-payment-aside-container {
+  background-color: lightcoral;
+}
 /*# sourceMappingURL=styles.css.map */
