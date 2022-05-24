@@ -14,7 +14,7 @@
       <header class="order-deliveryInfo-header-container">
         <!-- Page title -->
         <div class="order-deliveryInfo-header-title">
-          <h1>Delivery</h1>
+          <h1>Payment</h1>
         </div>
         <!-- Breadcrums and back button -->
         <div class="order-deliveryInfo-header-breadcrums-container">
@@ -39,8 +39,8 @@
       <section class="order-deliveryInfo-body-container">
         <!-- Payment Selection View Container -->
         <section
-          class="order-payments-container"
-          id="AddressesSelectionViewContainer"
+          class="order-payments-container force-show"
+          id="PaymentOptionsContainer"
         >
           <!-- Payment Add -->
           <header class="order-payment-add">
@@ -48,11 +48,20 @@
           </header>
           <!-- Payment card container -->
 
-          <label class="order-payment-card-container">
+          <label
+            class="order-payment-card-container checked"
+            onclick="paymentOptionType()"
+            id="paymentTypeCreditContainer"
+          >
             <!-- Payment card left -->
             <div class="order-payment-card-info-container">
               <div class="order-payment-card-info-radio">
-                <input type="radio" checked name="payment-type" />
+                <input
+                  type="radio"
+                  checked
+                  name="payment-type"
+                  id="paymentTypeCredit"
+                />
               </div>
               <div class="order-payment-card-info">
                 <h4>Credit & Debit Card</h4>
@@ -80,11 +89,19 @@
               </button>
             </div>
           </label>
-          <label class="order-payment-card-container">
+          <label
+            class="order-payment-card-container"
+            onclick="paymentOptionType()"
+            id="paymentTypePayFastContainer"
+          >
             <!-- Payment card left -->
             <div class="order-payment-card-info-container">
               <div class="order-payment-card-info-radio">
-                <input type="radio" name="payment-type" />
+                <input
+                  type="radio"
+                  name="payment-type"
+                  id="paymentTypePayFast"
+                />
               </div>
               <div class="order-payment-card-info">
                 <h4>EFT with PayFast</h4>
@@ -135,42 +152,109 @@
           </label>
         </section>
         <!-- Payment options container -->
-        <section class="order-payment_edit-container"></section>
+        <section
+          class="order-payment-options-container"
+          id="PaymentOptionsTypeContainer"
+        >
+          <div class="order-payment-options-header">
+            <h3>Add New Card</h3>
+          </div>
+          <div class="order-payment-options-from-container">
+            <div class="order-payment-options-from-fields-container">
+              <div class="order-payment-options-from-field-container">
+                <div class="order-payment-options-from-field-name">
+                  <h4>Card Description</h4>
+                </div>
+                <div class="order-payment-options-from-field-info">
+                  <input type="text" name="card_description" />
+                </div>
+              </div>
+              <div class="order-payment-options-from-field-container">
+                <div class="order-payment-options-from-field-name">
+                  <h4>Name on Card</h4>
+                </div>
+                <div class="order-payment-options-from-field-info">
+                  <input type="text" name="name_on_card" />
+                </div>
+              </div>
+              <div class="order-payment-options-from-field-container">
+                <div class="order-payment-options-from-field-name">
+                  <h4>Card Number</h4>
+                </div>
+                <div class="order-payment-options-from-field-info">
+                  <input type="text" name="card_number" />
+                </div>
+              </div>
+              <div class="order-payment-options-from-field-container">
+                <div class="order-payment-options-from-field-name">
+                  <h4>Expiry Date</h4>
+                </div>
+                <div class="order-payment-options-from-field-info">
+                  <input type="month" name="expiry_date" />
+                </div>
+              </div>
+              <div class="order-payment-options-from-field-container">
+                <div class="order-payment-options-from-field-name">
+                  <h4>CVV</h4>
+                </div>
+                <div class="order-payment-options-from-field-info">
+                  <input type="text" name="cvv" />
+                </div>
+              </div>
+              <div class="order-payment-options-from-buttons-container">
+                <button
+                  class="order-payment-options-from-button-cancel"
+                  onclick="paymentOptionTypeForm()"
+                >
+                  <i class="fa-solid fa-ban"></i>
+                  <h4>Cancel</h4>
+                </button>
+                <button onclick="paymentOptionTypeForm()">
+                  <i class="fa-solid fa-file-invoice"></i>
+                  <h4>Pay R 49 270.00</h4>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
         <!-- Summary container -->
-        <aside class="order-deliveryInfo-summary-container">
-          <div class="order-deliveryInfo-summary-header">
-            <h2>Order Summary</h2>
-          </div>
-          <div class="order-deliveryInfo-summary-subTotal-container">
-            <div class="order-deliveryInfo-summary-subTotal">
-              <h3>subtotal</h3>
-              <h3>R 43 990.00</h3>
+        <aside class="testing-main-container">
+          <div class="order-deliveryInfo-summary-container">
+            <div class="order-deliveryInfo-summary-header">
+              <h2>Order Summary</h2>
             </div>
-            <div class="order-deliveryInfo-summary-subTotal">
-              <h3>ESTIMATED DELIVERY & HANDLING</h3>
-              <h3>R 1280.00</h3>
+            <div class="order-deliveryInfo-summary-subTotal-container">
+              <div class="order-deliveryInfo-summary-subTotal">
+                <h3>subtotal</h3>
+                <h3>R 43 990.00</h3>
+              </div>
+              <div class="order-deliveryInfo-summary-subTotal">
+                <h3>ESTIMATED DELIVERY & HANDLING</h3>
+                <h3>R 1280.00</h3>
+              </div>
+              <div class="order-deliveryInfo-summary-subTotal">
+                <h3>VAT.</h3>
+                <h3>R 4000.00</h3>
+              </div>
             </div>
-            <div class="order-deliveryInfo-summary-subTotal">
-              <h3>VAT.</h3>
-              <h3>R 4000.00</h3>
+            <div class="order-deliveryInfo-summary-total">
+              <h3>total</h3>
+              <h3>R 49 270.00</h3>
             </div>
-          </div>
-          <div class="order-deliveryInfo-summary-total">
-            <h3>total</h3>
-            <h3>R 49 270.00</h3>
-          </div>
-          <div class="order-deliveryInfo-summary-buttons">
-            <a href="../index.html">
-              <button class="order-deliveryInfo-summary-button-confirm">
+            <div class="order-deliveryInfo-summary-buttons">
+              <button
+                class="order-deliveryInfo-summary-button-confirm"
+                onclick="paymentOptionTypeForm()"
+              >
                 <i class="fas fa-shopping-cart"></i>
-
                 <h3>Continue</h3>
               </button>
-            </a>
-            <button class="order-deliveryInfo-summary-button-quote">
-              <h3>DOWNLOAD QUOTe</h3>
-            </button>
+              <button class="order-deliveryInfo-summary-button-quote">
+                <h3>DOWNLOAD QUOTe</h3>
+              </button>
+            </div>
           </div>
+          <div class="testing-aside-container">Some content</div>
         </aside>
       </section>
     </section>

@@ -49,7 +49,7 @@ body {
   max-width: 1340px;
   margin: auto;
   // background-color: $color-primary;
-  min-height: 100vh;
+  min-height: 120vh;
   //   Order deliveryInfo header container
   .order-deliveryInfo-header-container {
     // Main header
@@ -434,7 +434,7 @@ body {
       // background-color: $color-quinary;
       width: 857px;
       height: fit-content;
-      display: flex;
+      display: none;
       flex-direction: column;
       gap: 10px;
       // padding: 29px 0;
@@ -491,6 +491,17 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        transition: $animation-basic-primary;
+        &.checked {
+          background-color: $color-septenary;
+
+          .order-payment-card-info-icons {
+            opacity: 1 !important;
+          }
+          .order-payment-card-options {
+            display: initial;
+          }
+        }
         .order-payment-card-info-container {
           display: flex;
           justify-content: center;
@@ -510,6 +521,8 @@ body {
               display: flex;
               // justify-content: center;
               align-items: center;
+              transition: $animation-basic-primary;
+              opacity: 0.7;
               img {
                 height: 20px;
                 margin-right: 8px;
@@ -524,6 +537,7 @@ body {
           }
         }
         .order-payment-card-options {
+          display: none;
           button {
             background-color: transparent;
             &:hover {
@@ -541,103 +555,233 @@ body {
         }
       }
     }
-    .order-payment_edit-container {
-      display: none;
+
+    .order-payment-options-container {
       width: 857px;
-      min-height: 200px;
-      background-color: lightseagreen;
-    }
-    .order-deliveryInfo-summary-container {
-      width: 470px;
-      height: fit-content;
-      background-color: $color-tertiary;
-      color: $color-quinary;
-      padding: 81px 64px 64px;
-
-      .order-deliveryInfo-summary-header {
-        height: 44px;
-        margin-bottom: 16px;
-
-        h2 {
-          font-size: 18px;
-          line-height: 24px;
-          font-weight: bold;
-          text-transform: uppercase;
+      // height: 200px;
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      .order-payment-options-header {
+        display: flex;
+        flex-direction: column;
+        padding: 29px;
+        background-color: $color-quinary;
+        // height: 106px;
+        gap: 16px;
+        h3 {
+          font-size: 17px;
           margin: 0;
+          text-transform: uppercase;
+          color: $color-primary;
+        }
+        .order-payment-options-from-radioButtons-container {
+          display: flex;
+          gap: 16px;
         }
       }
+      .order-payment-options-from-container {
+        background-color: $color-quinary;
+        padding: 29px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
 
-      .order-deliveryInfo-summary-subTotal-container {
-        height: 75px;
-        border-bottom: 1px solid $color-senary;
-        padding-bottom: 16px;
-        margin-bottom: 16px;
+        .order-payment-options-from-fields-container {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
 
-        .order-deliveryInfo-summary-subTotal {
+          .order-payment-options-from-field-container {
+            display: flex;
+            gap: 16px;
+            .order-payment-options-from-field-name {
+              background-color: $color-denary;
+              color: $color-quinary;
+              display: flex;
+              justify-content: flex-end;
+              align-items: center;
+              width: 360px;
+              height: 48px;
+              padding: 15px 24px 17px;
+
+              h4 {
+                font-size: 12px;
+                margin: 0;
+                height: 16px;
+              }
+            }
+
+            .order-payment-options-from-field-info {
+              width: 512px;
+              min-height: 48px;
+
+              input {
+                width: 100%;
+                height: 100%;
+                padding: 15px 24px 17px;
+                background-color: $color-septenary;
+                color: $color-primary;
+                border: none;
+                outline: none;
+
+                font-size: 12px;
+                margin: 0;
+                line-height: 16px;
+              }
+              select {
+                padding: 15px 24px 17px;
+                width: 100%;
+                height: 100%;
+                background-color: $color-septenary;
+                color: $color-primary;
+                border: none;
+                outline: none;
+
+                font-size: 12px;
+                margin: 0;
+                line-height: 16px;
+              }
+            }
+          }
+        }
+        .order-payment-options-from-buttons-container {
+          display: flex;
+          justify-content: flex-end;
+          gap: 16px;
+          button {
+            border: none;
+            min-width: 101px;
+            height: 48px;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            background-color: $color-senary;
+            color: $color-primary;
+            transition: 0.3s ease-in all;
+            &.order-payment-options-from-button-cancel {
+              background-color: $color-septenary;
+              color: $color-primary;
+            }
+            h4 {
+              font-size: 12px;
+              text-transform: uppercase;
+              margin: 0;
+              line-height: 16px;
+            }
+            i {
+              font-size: 14px;
+              margin-right: 5px;
+              line-height: 16px;
+            }
+            &:hover {
+              background-color: $color-primary;
+              color: $color-quinary;
+            }
+          }
+        }
+      }
+    }
+    .testing-main-container {
+      background-color: lightblue;
+      height: 800px;
+      .testing-aside-container {
+        background-color: lightgreen;
+      }
+      .order-deliveryInfo-summary-container {
+        width: 470px;
+        height: fit-content;
+        background-color: $color-tertiary;
+        color: $color-quinary;
+        padding: 81px 64px 64px;
+
+        .order-deliveryInfo-summary-header {
+          height: 44px;
+          margin-bottom: 16px;
+
+          h2 {
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0;
+          }
+        }
+
+        .order-deliveryInfo-summary-subTotal-container {
+          height: 75px;
+          border-bottom: 1px solid $color-senary;
+          padding-bottom: 16px;
+          margin-bottom: 16px;
+
+          .order-deliveryInfo-summary-subTotal {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 10px;
+
+            h3 {
+              font-size: 10px;
+              font-weight: 300;
+              text-transform: uppercase;
+              margin: 0;
+              line-height: 13px;
+            }
+          }
+        }
+
+        .order-deliveryInfo-summary-total {
           display: flex;
           justify-content: space-between;
-          padding-bottom: 10px;
+          margin-bottom: 63px;
 
           h3 {
-            font-size: 10px;
-            font-weight: 300;
             text-transform: uppercase;
+            font-size: 18px;
+            line-height: 24px;
             margin: 0;
-            line-height: 13px;
-          }
-        }
-      }
-
-      .order-deliveryInfo-summary-total {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 63px;
-
-        h3 {
-          text-transform: uppercase;
-          font-size: 18px;
-          line-height: 24px;
-          margin: 0;
-        }
-      }
-
-      .order-deliveryInfo-summary-buttons {
-        button {
-          width: 100%;
-          height: 48px;
-          border: 1px solid $color-primary;
-          outline: none;
-          padding: 15px 0 17px;
-          color: $color-primary;
-
-          h3 {
-            font-weight: bold;
-            font-size: 12px;
-            line-height: 16px;
-            margin: 0;
-            text-transform: uppercase;
           }
         }
 
-        .order-deliveryInfo-summary-button-confirm {
-          background-color: $color-senary;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          margin-bottom: 8px;
+        .order-deliveryInfo-summary-buttons {
+          button {
+            width: 100%;
+            height: 48px;
+            border: 1px solid $color-primary;
+            outline: none;
+            padding: 15px 0 17px;
+            color: $color-primary;
 
-          i {
-            font-size: 14px;
-            margin-right: 13px;
+            h3 {
+              font-weight: bold;
+              font-size: 12px;
+              line-height: 16px;
+              margin: 0;
+              text-transform: uppercase;
+            }
           }
 
-          &:hover {
-            cursor: pointer;
-          }
-        }
+          .order-deliveryInfo-summary-button-confirm {
+            background-color: $color-senary;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 8px;
 
-        .order-deliveryInfo-summary-button-quote {
-          background-color: $color-quinary;
+            i {
+              font-size: 14px;
+              margin-right: 13px;
+            }
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+
+          .order-deliveryInfo-summary-button-quote {
+            background-color: $color-quinary;
+          }
         }
       }
     }
