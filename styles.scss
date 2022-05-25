@@ -1369,6 +1369,7 @@ body {
 
 // More Utilities
 
+// Display options
 // Adds display flex to component
 .flex {
   display: flex;
@@ -1384,11 +1385,70 @@ body {
 // Banner component
 .banner {
   // For the header at the top of the page
-
   height: 96px;
+  h1 {
+    font-size: 32px;
+    line-height: 43px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 25px 0 28px;
+  }
   // Banner colors
   &.banner-primary {
     background-color: $color-senary;
     color: $color-primary;
+  }
+}
+
+// Button component
+.button {
+  height: 48px;
+  width: 155px;
+  padding: 15px 15px 17px;
+  outline: none;
+  // If it has an animation
+  transition: $animation-basic-primary;
+  h3 {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 16px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  // If it has an icon
+  i {
+    font-size: 14px;
+    margin-right: 13px;
+    line-height: 16px;
+  }
+  // Hover animations
+  &:hover {
+    cursor: pointer;
+  }
+  // Button colors
+  &.button-primary {
+    background-color: $color-senary;
+    color: $color-primary;
+  }
+
+  &.button-secondary {
+    background-color: $color-quinary;
+    color: $color-primary;
+  }
+
+  // Button with border
+  &.button-border-primary {
+    border: 1px solid $color-primary;
+  }
+
+  // Buttons with icons
+  // Icon left
+  i + h3 {
+    margin-left: 13px;
+  }
+  // Icon right
+  h3 + i {
+    margin-left: 13px;
   }
 }

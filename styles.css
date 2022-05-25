@@ -1747,8 +1747,66 @@ body {
   height: 96px;
 }
 
+.banner h1 {
+  font-size: 32px;
+  line-height: 43px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 25px 0 28px;
+}
+
 .banner.banner-primary {
   background-color: #fcdb10;
   color: #233043;
+}
+
+.button {
+  height: 48px;
+  width: 155px;
+  padding: 15px 15px 17px;
+  outline: none;
+  -webkit-transition: 0.3s ease-in all;
+  transition: 0.3s ease-in all;
+}
+
+.button h3 {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.button i {
+  font-size: 14px;
+  margin-right: 13px;
+  line-height: 16px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button.button-primary {
+  background-color: #fcdb10;
+  color: #233043;
+}
+
+.button.button-secondary {
+  background-color: #ffffff;
+  color: #233043;
+}
+
+.button.button-border-primary {
+  border: 1px solid #233043;
+}
+
+.button i + h3 {
+  margin-left: 13px;
+}
+
+.button h3 + i {
+  margin-left: 13px;
 }
 /*# sourceMappingURL=styles.css.map */
