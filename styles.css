@@ -1729,4 +1729,29 @@ body {
   margin: 0;
   padding: 25px 0 28px;
 }
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner {
+  margin-top: 112px;
+  height: 96px;
+}
+
+.banner.banner-primary {
+  background-color: #fcdb10;
+  color: #233043;
+}
 /*# sourceMappingURL=styles.css.map */

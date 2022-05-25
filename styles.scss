@@ -1361,3 +1361,29 @@ body {
     }
   }
 }
+
+// More Utilities
+
+// Adds display flex to component
+.flex {
+  display: flex;
+}
+// Puts everything inside of the container in the middel
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+// Components
+
+// Banner component
+.banner {
+  // For the header at the top of the page
+  margin-top: 112px;
+  height: 96px;
+  // Banner colors
+  &.banner-primary {
+    background-color: $color-senary;
+    color: $color-primary;
+  }
+}
