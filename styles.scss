@@ -1419,7 +1419,7 @@ body {
   // If it has an icon
   i {
     font-size: 14px;
-    margin-right: 13px;
+
     line-height: 16px;
   }
   // Hover animations
@@ -1443,6 +1443,7 @@ body {
   }
 
   // Buttons with icons
+  // Margin for icons and text
   // Icon left
   i + h3 {
     margin-left: 13px;
