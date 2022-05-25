@@ -1116,8 +1116,82 @@ body {
 }
 // About page styling
 .about-container {
-}
+  max-width: 1340px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 
+  .about-header-title {
+    background-color: $color-senary;
+    margin-top: 112px;
+    height: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      color: $color-primary;
+      font-size: 32px;
+      font-weight: bold;
+      line-height: 43px;
+      text-transform: uppercase;
+      margin: 0;
+      padding: 25px 0 28px;
+    }
+  }
+  .about-body-container {
+    padding: 128px 226px 32px 226px;
+    background-color: $color-tertiary;
+
+    .about-info-details-container {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      gap: 32px;
+      margin-bottom: 96px;
+
+      .about-info-details-description {
+        h2 {
+          font-size: 32px;
+          color: $color-quinary;
+          margin-bottom: 23px;
+        }
+        p {
+          font-size: 12px;
+          color: $color-quinary;
+        }
+      }
+      img {
+        border: 2px solid $color-quinary;
+      }
+    }
+  }
+}
+//Contact details and Contacts us page styling
+.contactUs-container {
+  max-width: 1340px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  .contactUs-header-title {
+    background-color: $color-senary;
+    margin-top: 112px;
+    height: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      color: $color-primary;
+      font-size: 32px;
+      font-weight: bold;
+      line-height: 43px;
+      text-transform: uppercase;
+      margin: 0;
+      padding: 25px 0 28px;
+    }
+  }
+}
 // For Maurice
 // <div class="order-payment-aside-container">
 //           <!-- Summary container -->
