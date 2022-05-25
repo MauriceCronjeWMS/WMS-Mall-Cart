@@ -24,18 +24,16 @@ button {
 
 body {
   background-color: #233043;
+  max-width: 1340px;
+  margin: auto;
+  min-height: 120vh;
+  margin-top: 112px;
 }
 
 .force-show {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
-}
-
-.order-deliveryInfo-container {
-  max-width: 1340px;
-  margin: auto;
-  min-height: 120vh;
 }
 
 .order-deliveryInfo-container .order-deliveryInfo-header-container .order-deliveryInfo-header-title {
@@ -1746,7 +1744,6 @@ body {
 }
 
 .banner {
-  margin-top: 112px;
   height: 96px;
 }
 
