@@ -42,7 +42,9 @@ function paymentOptionType() {
 function paymentOptionTypeForm() {
   let x = document.getElementById("PaymentOptionsContainer");
   let y = document.getElementById("PaymentOptionsTypeContainer");
+  let z = document.getElementById("paymentReviewContainer");
 
   x.classList.toggle("force-show");
   y.classList.toggle("force-show");
+  z.classList.toggle("force-show");
 }

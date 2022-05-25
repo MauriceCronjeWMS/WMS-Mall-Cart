@@ -217,44 +217,73 @@
             </div>
           </div>
         </section>
-        <!-- Summary container -->
-        <aside class="testing-main-container">
-          <div class="order-deliveryInfo-summary-container">
-            <div class="order-deliveryInfo-summary-header">
+        <!-- Order Summary container -->
+        <aside class="order-payment-container">
+          <!-- Order summary -->
+          <div class="order-payment-summary-container">
+            <div class="order-payment-summary-header">
               <h2>Order Summary</h2>
             </div>
-            <div class="order-deliveryInfo-summary-subTotal-container">
-              <div class="order-deliveryInfo-summary-subTotal">
+            <div class="order-payment-summary-subTotal-container">
+              <div class="order-payment-summary-subTotal">
                 <h3>subtotal</h3>
                 <h3>R 43 990.00</h3>
               </div>
-              <div class="order-deliveryInfo-summary-subTotal">
+              <div class="order-payment-summary-subTotal">
                 <h3>ESTIMATED DELIVERY & HANDLING</h3>
                 <h3>R 1280.00</h3>
               </div>
-              <div class="order-deliveryInfo-summary-subTotal">
+              <div class="order-payment-summary-subTotal">
                 <h3>VAT.</h3>
                 <h3>R 4000.00</h3>
               </div>
             </div>
-            <div class="order-deliveryInfo-summary-total">
+            <div class="order-payment-summary-total">
               <h3>total</h3>
               <h3>R 49 270.00</h3>
             </div>
-            <div class="order-deliveryInfo-summary-buttons">
+            <div class="order-payment-summary-buttons">
               <button
-                class="order-deliveryInfo-summary-button-confirm"
+                class="order-payment-summary-button-confirm"
                 onclick="paymentOptionTypeForm()"
               >
                 <i class="fas fa-shopping-cart"></i>
                 <h3>Continue</h3>
               </button>
-              <button class="order-deliveryInfo-summary-button-quote">
+              <button class="order-payment-summary-button-quote">
                 <h3>DOWNLOAD QUOTe</h3>
               </button>
             </div>
           </div>
-          <div class="testing-aside-container">Some content</div>
+          <!-- Order Review -->
+          <div
+            class="order-payment-review-container force-show"
+            id="paymentReviewContainer"
+          >
+            <!-- Order review top (Delivery Method)-->
+            <div class="order-payment-review-header-container">
+              <h2>Order Review</h2>
+              <h3>Delivery Method</h3>
+              <h3 class="normal-font">Delivery</h3>
+            </div>
+            <!-- Order review middel (Delivery Address)-->
+            <div class="order-payment-review-body-container">
+              <h2>Delivery Address</h2>
+              <h4>Maurice Cronje</h4>
+              <h4>Residential</h4>
+              <address>
+                <p>55 Roedolf</p>
+                <p>563 Rednose Avenue</p>
+                <p>Raindeer, Centurion, 0420</p>
+              </address>
+              <h4>0761239876</h4>
+            </div>
+            <!-- Order review bottom (Delivery Date and items)-->
+            <div class="order-payment-review-footer-container">
+              <h2>Delivery By 31 June 2023</h2>
+              <h3>Standard Delivery</h3>
+            </div>
+          </div>
         </aside>
       </section>
     </section>

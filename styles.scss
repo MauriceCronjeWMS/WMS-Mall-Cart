@@ -684,105 +684,98 @@ body {
         }
       }
     }
-    .testing-main-container {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      .testing-aside-container {
-        background-color: lightgreen;
+
+    .order-deliveryInfo-summary-container {
+      width: 470px;
+      height: fit-content;
+      background-color: $color-tertiary;
+      color: $color-quinary;
+      padding: 81px 64px 64px;
+
+      .order-deliveryInfo-summary-header {
+        height: 44px;
+        margin-bottom: 16px;
+
+        h2 {
+          font-size: 18px;
+          line-height: 24px;
+          font-weight: bold;
+          text-transform: uppercase;
+          margin: 0;
+        }
       }
-      .order-deliveryInfo-summary-container {
-        width: 470px;
-        height: fit-content;
-        background-color: $color-tertiary;
-        color: $color-quinary;
-        padding: 81px 64px 64px;
 
-        .order-deliveryInfo-summary-header {
-          height: 44px;
-          margin-bottom: 16px;
+      .order-deliveryInfo-summary-subTotal-container {
+        height: 75px;
+        border-bottom: 1px solid $color-senary;
+        padding-bottom: 16px;
+        margin-bottom: 16px;
 
-          h2 {
-            font-size: 18px;
-            line-height: 24px;
-            font-weight: bold;
-            text-transform: uppercase;
-            margin: 0;
-          }
-        }
-
-        .order-deliveryInfo-summary-subTotal-container {
-          height: 75px;
-          border-bottom: 1px solid $color-senary;
-          padding-bottom: 16px;
-          margin-bottom: 16px;
-
-          .order-deliveryInfo-summary-subTotal {
-            display: flex;
-            justify-content: space-between;
-            padding-bottom: 10px;
-
-            h3 {
-              font-size: 10px;
-              font-weight: 300;
-              text-transform: uppercase;
-              margin: 0;
-              line-height: 13px;
-            }
-          }
-        }
-
-        .order-deliveryInfo-summary-total {
+        .order-deliveryInfo-summary-subTotal {
           display: flex;
           justify-content: space-between;
-          margin-bottom: 63px;
+          padding-bottom: 10px;
 
           h3 {
+            font-size: 10px;
+            font-weight: 300;
             text-transform: uppercase;
-            font-size: 18px;
-            line-height: 24px;
             margin: 0;
+            line-height: 13px;
+          }
+        }
+      }
+
+      .order-deliveryInfo-summary-total {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 63px;
+
+        h3 {
+          text-transform: uppercase;
+          font-size: 18px;
+          line-height: 24px;
+          margin: 0;
+        }
+      }
+
+      .order-deliveryInfo-summary-buttons {
+        button {
+          width: 100%;
+          height: 48px;
+          border: 1px solid $color-primary;
+          outline: none;
+          padding: 15px 0 17px;
+          color: $color-primary;
+
+          h3 {
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 16px;
+            margin: 0;
+            text-transform: uppercase;
           }
         }
 
-        .order-deliveryInfo-summary-buttons {
-          button {
-            width: 100%;
-            height: 48px;
-            border: 1px solid $color-primary;
-            outline: none;
-            padding: 15px 0 17px;
-            color: $color-primary;
+        .order-deliveryInfo-summary-button-confirm {
+          background-color: $color-senary;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 8px;
 
-            h3 {
-              font-weight: bold;
-              font-size: 12px;
-              line-height: 16px;
-              margin: 0;
-              text-transform: uppercase;
-            }
+          i {
+            font-size: 14px;
+            margin-right: 13px;
           }
 
-          .order-deliveryInfo-summary-button-confirm {
-            background-color: $color-senary;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 8px;
-
-            i {
-              font-size: 14px;
-              margin-right: 13px;
-            }
-
-            &:hover {
-              cursor: pointer;
-            }
+          &:hover {
+            cursor: pointer;
           }
+        }
 
-          .order-deliveryInfo-summary-button-quote {
-            background-color: $color-quinary;
-          }
+        .order-deliveryInfo-summary-button-quote {
+          background-color: $color-quinary;
         }
       }
     }
@@ -898,9 +891,6 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
-
-            input {
-            }
           }
         }
       }
@@ -1114,81 +1104,185 @@ body {
     }
   }
 }
+
+.order-payment-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .order-payment-summary-container {
+    width: 470px;
+    height: fit-content;
+    background-color: $color-tertiary;
+    color: $color-quinary;
+    padding: 81px 64px 64px;
+
+    .order-payment-summary-header {
+      height: 44px;
+      margin-bottom: 16px;
+
+      h2 {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 0;
+      }
+    }
+
+    .order-payment-summary-subTotal-container {
+      height: 75px;
+      border-bottom: 1px solid $color-senary;
+      padding-bottom: 16px;
+      margin-bottom: 16px;
+
+      .order-payment-summary-subTotal {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10px;
+
+        h3 {
+          font-size: 10px;
+          font-weight: 300;
+          text-transform: uppercase;
+          margin: 0;
+          line-height: 13px;
+        }
+      }
+    }
+
+    .order-payment-summary-total {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 63px;
+
+      h3 {
+        text-transform: uppercase;
+        font-size: 18px;
+        line-height: 24px;
+        margin: 0;
+      }
+    }
+
+    .order-payment-summary-buttons {
+      button {
+        width: 100%;
+        height: 48px;
+        border: 1px solid $color-primary;
+        outline: none;
+        padding: 15px 0 17px;
+        color: $color-primary;
+
+        h3 {
+          font-weight: bold;
+          font-size: 12px;
+          line-height: 16px;
+          margin: 0;
+          text-transform: uppercase;
+        }
+      }
+
+      .order-payment-summary-button-confirm {
+        background-color: $color-senary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 8px;
+
+        i {
+          font-size: 14px;
+          margin-right: 13px;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .order-payment-summary-button-quote {
+        background-color: $color-quinary;
+      }
+    }
+  }
+  .order-payment-review-container {
+    &.force-show {
+      display: initial !important;
+    }
+    display: none;
+    width: 470px;
+    height: fit-content;
+    background-color: $color-tertiary;
+    color: $color-septenary;
+    padding: 81px 64px 64px;
+    .order-payment-review-header-container {
+      h2 {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 36px;
+        color: $color-quinary;
+      }
+      h3 {
+        font-size: 12px;
+        text-transform: uppercase;
+        line-height: 23px;
+        color: $color-quinary;
+        &.normal-font {
+          font-size: 10px;
+          font-weight: normal;
+          padding-bottom: 16px;
+          margin-bottom: 16px;
+          border-bottom: 1px solid #fcdb10;
+          color: $color-septenary;
+        }
+      }
+    }
+    .order-payment-review-body-container {
+      h2 {
+        font-size: 12px;
+        text-transform: uppercase;
+        line-height: 23px;
+        color: $color-quinary;
+      }
+      h4,
+      p {
+        text-transform: uppercase;
+        line-height: 23px;
+        font-style: normal;
+
+        font-size: 10px;
+        font-weight: normal;
+      }
+      address p {
+        line-height: 14px;
+      }
+      address + h4 {
+        padding-bottom: 16px;
+        margin-bottom: 16px;
+        border-bottom: 1px solid #fcdb10;
+      }
+      h4 + h4 {
+        font-weight: bold;
+        color: $color-quaternary;
+      }
+    }
+    .order-payment-review-footer-container {
+      h2 {
+        font-size: 12px;
+        text-transform: uppercase;
+        line-height: 23px;
+        color: $color-quinary;
+      }
+      h3 {
+        text-transform: uppercase;
+        line-height: 23px;
+        font-size: 10px;
+        font-weight: normal;
+      }
+    }
+  }
+}
 // About page styling
 .about-container {
 }
-
-// For Maurice
-// <div class="order-payment-aside-container">
-//           <!-- Summary container -->
-//           <aside class="order-deliveryInfo-summary-container">
-//             <div class="order-deliveryInfo-summary-header">
-//               <h2>Order Summary</h2>
-//             </div>
-//             <div class="order-deliveryInfo-summary-subTotal-container">
-//               <div class="order-deliveryInfo-summary-subTotal">
-//                 <h3>subtotal</h3>
-//                 <h3>R 43 990.00</h3>
-//               </div>
-//               <div class="order-deliveryInfo-summary-subTotal">
-//                 <h3>ESTIMATED DELIVERY & HANDLING</h3>
-//                 <h3>R 1280.00</h3>
-//               </div>
-//               <div class="order-deliveryInfo-summary-subTotal">
-//                 <h3>VAT.</h3>
-//                 <h3>R 4000.00</h3>
-//               </div>
-//             </div>
-//             <div class="order-deliveryInfo-summary-total">
-//               <h3>total</h3>
-//               <h3>R 49 270.00</h3>
-//             </div>
-//             <div class="order-deliveryInfo-summary-buttons">
-//               <a href="../index.html">
-//                 <button class="order-deliveryInfo-summary-button-confirm">
-//                   <i class="fas fa-shopping-cart"></i>
-
-//                   <h3>Continue</h3>
-//                 </button>
-//               </a>
-//               <button class="order-deliveryInfo-summary-button-quote">
-//                 <h3>DOWNLOAD QUOTe</h3>
-//               </button>
-//             </div>
-//           </aside>
-//           <!-- Order Review -->
-//           <div class="order-payment-orderReview">
-//             <h2>Order Review</h2>
-//             <div class="order-payment-orderReview-method">
-//               <div class="order-payment-orderReview-method-delivery">
-//                 <h2>Delivery Method</h2>
-//                 <h3>Delivery</h3>
-//               </div>
-//               <button>
-//                 <h4>Change</h4>
-//               </button>
-//             </div>
-//             <div class="order-payment-orderReview-address">
-//               <h2>Delivery Address</h2>
-//               <h4>Jeandre</h4>
-//               <address>
-//                 <p>21 Carlsworld</p>
-//                 <p>14 Tamboti Street</p>
-//                 <p>carlsworld, Midrand 0256</p>
-//               </address>
-//               <h4>0827970330</h4>
-//             </div>
-//             <div class="order-payment-orderReview-delivery">
-//               <div class="order-payment-orderReview-delivery-date">
-//                 <h2>Delivery By 03 June 2022</h2>
-//                 <h3>Standard Delivery (First Delivery Free)</h3>
-//               </div>
-//               <div class="order-payment-orderReview-delivery-items">
-//                 <div class="order-payment-orderReview-delivery-items-info">
-//                   <h2>Items For Delivery</h2>
-//                   <button>Show Details</button>
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
