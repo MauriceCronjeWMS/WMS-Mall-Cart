@@ -1922,6 +1922,15 @@ body {
           align-items: center;
 }
 
+.flex-between-center {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .banner {
   height: 96px;
 }
@@ -1970,6 +1979,21 @@ body {
   color: #ffffff;
 }
 
+.button.default-btn {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0;
+}
+
+.button.default-btn h3 {
+  font-weight: normal;
+  text-transform: none;
+}
+
 .button h3 {
   font-size: 12px;
   font-weight: bold;
@@ -1999,6 +2023,11 @@ body {
 
 .button.button-tertiary {
   background-color: #233043;
+  color: #ffffff;
+}
+
+.button.button-quaternary {
+  background-color: transparent;
   color: #ffffff;
 }
 
@@ -2157,5 +2186,26 @@ body {
   outline: none;
   font-size: 12px;
   line-height: 16px;
+}
+
+.breadcrumbs-container {
+  padding: 14px 0 16px;
+}
+
+.breadcrumbs-container .breadcrumbs-title-container {
+  gap: 8px;
+}
+
+.breadcrumbs-container .breadcrumbs-title-container h3 {
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 16px;
+  margin: 0;
+  -webkit-transition: 0.3s ease-in all;
+  transition: 0.3s ease-in all;
+}
+
+.breadcrumbs-container.breadcrumbs-primary {
+  color: #ffffff;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -11,7 +11,8 @@
         NOTE: 
         Only for you to see it better. Not an intended style. 
       */
-      button {
+      button,
+      label {
         margin: 10px;
         background-color: seagreen;
       }
@@ -60,12 +61,20 @@
 
     <!-- Radio button -->
     <label
-      class="button radio-btn radio-btn-primary flex"
+      class="button radio-btn radio-btn-primary flex flex-end-center"
       for="inputIDRadioBtn"
     >
       <input type="radio" id="inputIDRadioBtn" name="radioBtnExmapleGroup" />
       <h3>iAmRadioButton</h3>
     </label>
+    <!-- 
+     Buttons with icon and text but no background and noraml font.
+     (Might be used inside of the breadcrumbs)
+  -->
+    <button class="button default-btn button-quaternary flex flex-center">
+      <i class="fas fa-shopping-cart"></i>
+      <h3>iAmDefaultButton</h3>
+    </button>
   </body>
 
   <script

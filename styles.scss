@@ -50,11 +50,6 @@ body {
 }
 // Order Conformation Container
 .order-deliveryInfo-container {
-  // max-width: 1340px;
-  // margin: auto;
-  // // background-color: $color-primary;
-  // min-height: 120vh;
-  // margin-top: 112px;
   //   Order deliveryInfo header container
   .order-deliveryInfo-header-container {
     // Main header
@@ -107,12 +102,9 @@ body {
       }
       .order-deliveryInfo-header-breadcrums-button {
         button {
-          // height: 48px;
-          // width: 101px;
           border: none;
           outline: none;
           color: $color-quinary;
-          // background-color: $color-tertiary;
           background-color: transparent;
           transition: $animation-basic-primary;
           cursor: pointer;
@@ -121,7 +113,6 @@ body {
           justify-content: center;
           h4 {
             font-size: 12px;
-            // text-transform: uppercase;
             line-height: 16px;
             font-weight: normal;
           }
@@ -150,7 +141,6 @@ body {
       display: none;
       flex-direction: column;
       gap: 10px;
-      // padding: 29px 0;
 
       // Address add container
       .order-deliveryInfo-address-add {
@@ -160,7 +150,6 @@ body {
 
         padding: 29px;
         background-color: $color-quinary;
-        // padding: 0 29px;
         h3 {
           font-size: 17px;
           margin: 0;
@@ -198,10 +187,8 @@ body {
       // Address info and choice
       .order-deliveryInfo-address-card-container {
         background-color: $color-quinary;
-        // height: 210px;
         padding: 29px 46px;
         width: 100%;
-        // padding: 0 46px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -268,7 +255,6 @@ body {
     // Address edit container
     .order-deliveryInfo-addresses_edit-container {
       width: 857px;
-      // height: 200px;
       display: none;
       flex-direction: column;
       gap: 10px;
@@ -277,7 +263,6 @@ body {
         flex-direction: column;
         padding: 29px;
         background-color: $color-quinary;
-        // height: 106px;
         gap: 16px;
         h3 {
           font-size: 17px;
@@ -288,12 +273,8 @@ body {
         .order-deliveryInfo-addresses_edit-from-radioButtons-container {
           display: flex;
           gap: 16px;
-          // padding-bottom: 14.5px;
-          // border-bottom: 1px solid $color-primary;
           .order-deliveryInfo-addresses_edit-from-radioButton-container {
-            // background-color: $color-denary;
             background-color: $color-septenary;
-            // color: $color-quinary;
             color: $color-primary;
             display: flex;
             align-items: center;
@@ -400,9 +381,7 @@ body {
           justify-content: flex-end;
           gap: 16px;
           button {
-            // margin-left: 8px;
             border: none;
-            // border: 1px solid $color-primary;
             width: 101px;
             height: 48px;
             display: flex;
@@ -436,13 +415,11 @@ body {
       }
     }
     .order-payments-container {
-      // background-color: $color-quinary;
       width: 857px;
       height: fit-content;
       display: none;
       flex-direction: column;
       gap: 10px;
-      // padding: 29px 0;
 
       // Address add container
       .order-payment-add {
@@ -452,7 +429,6 @@ body {
 
         padding: 29px;
         background-color: $color-quinary;
-        // padding: 0 29px;
         h3 {
           font-size: 17px;
           margin: 0;
@@ -563,7 +539,6 @@ body {
 
     .order-payment-options-container {
       width: 857px;
-      // height: 200px;
       display: none;
       flex-direction: column;
       gap: 10px;
@@ -572,7 +547,6 @@ body {
         flex-direction: column;
         padding: 29px;
         background-color: $color-quinary;
-        // height: 106px;
         gap: 16px;
         h3 {
           font-size: 17px;
@@ -835,12 +809,9 @@ body {
       }
       .delivery-addressEdit-header-breadcrums-button {
         button {
-          // height: 48px;
-          // width: 101px;
           border: none;
           outline: none;
           color: $color-quinary;
-          // background-color: $color-tertiary;
           background-color: transparent;
           transition: $animation-basic-primary;
           cursor: pointer;
@@ -849,7 +820,6 @@ body {
           justify-content: center;
           h4 {
             font-size: 12px;
-            // text-transform: uppercase;
             line-height: 16px;
             font-weight: normal;
           }
@@ -1511,11 +1481,18 @@ body {
   flex-direction: column;
 }
 
-// Aligns contents horizonal end and vertical center
+// Aligns contents horizonal:end and vertical:center
 .flex-end-center {
   justify-content: flex-end;
   align-items: center;
 }
+
+// Aligns contents horizonal:space-between and vertical:center
+.flex-between-center {
+  justify-content: space-between;
+  align-items: center;
+}
+
 // Components
 
 // Banner component
@@ -1541,6 +1518,9 @@ body {
 .button {
   height: 48px;
   width: 155px;
+  padding: 15px 15px 17px;
+  outline: none;
+  transition: $animation-basic-primary;
   // Button with just icon
   &.button-sm {
     width: 48px;
@@ -1561,10 +1541,18 @@ body {
       color: $color-quinary;
     }
   }
-  padding: 15px 15px 17px;
-  outline: none;
+  // Default button (Breadcrum button)
+  &.default-btn {
+    height: fit-content;
+    width: fit-content;
+    padding: 0;
+    h3 {
+      font-weight: normal;
+      text-transform: none;
+    }
+  }
+
   // If it has an animation
-  transition: $animation-basic-primary;
   h3 {
     font-size: 12px;
     font-weight: bold;
@@ -1594,6 +1582,11 @@ body {
 
   &.button-tertiary {
     background-color: $color-primary;
+    color: $color-quinary;
+  }
+
+  &.button-quaternary {
+    background-color: transparent;
     color: $color-quinary;
   }
 
@@ -1680,7 +1673,6 @@ body {
     color: $color-primary;
   }
 }
-
 // form component
 .form-container {
   // Gap between containers in form (If the is fields and a button)
@@ -1754,5 +1746,23 @@ body {
         line-height: 16px;
       }
     }
+  }
+}
+
+// Breadcrumbs component
+.breadcrumbs-container {
+  padding: 14px 0 16px;
+  .breadcrumbs-title-container {
+    gap: 8px;
+    h3 {
+      font-size: 12px;
+      font-weight: normal;
+      line-height: 16px;
+      margin: 0;
+      transition: $animation-basic-primary;
+    }
+  }
+  &.breadcrumbs-primary {
+    color: $color-quinary;
   }
 }
