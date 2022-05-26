@@ -1492,6 +1492,10 @@ body {
   align-items: center;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
 // Components
 
 // Banner component
@@ -1517,6 +1521,9 @@ body {
 .button {
   height: 48px;
   width: 155px;
+  &.button-sm {
+    width: 48px;
+  }
   padding: 15px 15px 17px;
   outline: none;
   // If it has an animation
@@ -1531,7 +1538,6 @@ body {
   // If it has an icon
   i {
     font-size: 14px;
-
     line-height: 16px;
   }
   // Hover animations
@@ -1549,6 +1555,11 @@ body {
     color: $color-primary;
   }
 
+  &.button-tertiary {
+    background-color: $color-primary;
+    color: $color-quinary;
+  }
+
   // Button with border
   &.button-border-primary {
     border: 1px solid $color-primary;
@@ -1563,5 +1574,70 @@ body {
   // Icon right
   h3 + i {
     margin-left: 13px;
+  }
+}
+
+// Card component
+.card-container {
+  width: 245px;
+  .card-img-container {
+    img {
+      width: 245px;
+      height: 234px;
+    }
+  }
+  .card-info-container {
+    gap: 16px;
+    padding: 16px 17px 16px 16px;
+    .card-title {
+      height: 44px;
+      h3 {
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 0;
+      }
+    }
+    // Meta data for the cards
+    .card-icons-container {
+      gap: 32px;
+      .card-icon-container {
+        gap: 8px;
+        i {
+          font-size: 12px;
+        }
+        h4 {
+          font-size: 10px;
+          font-weight: normal;
+          line-height: 13px;
+          margin: 0;
+        }
+      }
+      &.card-icons-primary {
+        color: $color-quaternary;
+      }
+    }
+    .card-discription {
+      p {
+        font-size: 10px;
+        line-height: 13px;
+      }
+    }
+    .card-subTitle {
+      h3 {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 24px;
+        text-transform: uppercase;
+        margin-top: -2px;
+      }
+    }
+    .card-buttons-container {
+      gap: 8px;
+    }
+  }
+  &.card-primary {
+    background-color: $color-quinary;
+    color: $color-primary;
   }
 }
