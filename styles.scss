@@ -1374,33 +1374,48 @@ body {
       .contactUs-info-details-container {
         color: $color-quinary;
         background-color: $color-tertiary;
-        padding: 30px;
+        padding: 81px 64px 64px 64px;
         width: 517px;
 
         .contactUs-info-details-description {
+          margin-bottom: 5px;
+          padding-bottom: 27px;
+
           h2 {
             font-size: 17px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid $color-senary;
           }
           p {
             font-size: 10px;
+            padding: 16px 0;
+            border-bottom: 1px solid $color-senary;
           }
         }
         .contactUs-info-details-company-container {
+          padding-bottom: 27px;
+          border-bottom: 1px solid $color-senary;
+
           .contactUs-info-details-company {
             display: flex;
             align-items: center;
-            font-size: 10px;
+            font-size: 12px;
+            padding-bottom: 15px;
 
             i {
-              padding-right: 5px;
+              margin-right: 10px;
+            }
+            h3 {
+              font-weight: normal;
             }
           }
         }
         .contactUs-info-details-social {
           display: flex;
+          padding-top: 27px;
 
           .contactUs-info-details-social {
-            margin-right: 8px;
+            margin-right: 10px;
 
             i {
               font-size: 23px;

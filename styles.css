@@ -1742,16 +1742,30 @@ body {
 .contactUs-container .contactUs-body-container .contactUs-info-container .contactUs-info-details-container {
   color: #ffffff;
   background-color: #44546a;
-  padding: 30px;
+  padding: 81px 64px 64px 64px;
   width: 517px;
+}
+
+.contactUs-container .contactUs-body-container .contactUs-info-container .contactUs-info-details-container .contactUs-info-details-description {
+  margin-bottom: 5px;
+  padding-bottom: 27px;
 }
 
 .contactUs-container .contactUs-body-container .contactUs-info-container .contactUs-info-details-container .contactUs-info-details-description h2 {
   font-size: 17px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #fcdb10;
 }
 
 .contactUs-container .contactUs-body-container .contactUs-info-container .contactUs-info-details-container .contactUs-info-details-description p {
   font-size: 10px;
+  padding: 16px 0;
+  border-bottom: 1px solid #fcdb10;
+}
+
+.contactUs-container .contactUs-body-container .contactUs-info-container .contactUs-info-details-container .contactUs-info-details-company-container {
+  padding-bottom: 27px;
+  border-bottom: 1px solid #fcdb10;
 }
 
 .contactUs-container .contactUs-body-container .contactUs-info-container .contactUs-info-details-container .contactUs-info-details-company-container .contactUs-info-details-company {
@@ -1761,21 +1775,27 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 10px;
+  font-size: 12px;
+  padding-bottom: 15px;
 }
 
 .contactUs-container .contactUs-body-container .contactUs-info-container .contactUs-info-details-container .contactUs-info-details-company-container .contactUs-info-details-company i {
-  padding-right: 5px;
+  margin-right: 10px;
+}
+
+.contactUs-container .contactUs-body-container .contactUs-info-container .contactUs-info-details-container .contactUs-info-details-company-container .contactUs-info-details-company h3 {
+  font-weight: normal;
 }
 
 .contactUs-container .contactUs-body-container .contactUs-info-container .contactUs-info-details-container .contactUs-info-details-social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 27px;
 }
 
 .contactUs-container .contactUs-body-container .contactUs-info-container .contactUs-info-details-container .contactUs-info-details-social .contactUs-info-details-social {
-  margin-right: 8px;
+  margin-right: 10px;
 }
 
 .contactUs-container .contactUs-body-container .contactUs-info-container .contactUs-info-details-container .contactUs-info-details-social .contactUs-info-details-social i {
