@@ -1728,6 +1728,169 @@ body {
   padding: 25px 0 28px;
 }
 
+.contactUs-container .contactUs-body-container .contactUs-info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 16px;
+}
+
+.contactUs-container .contactUs-body-container .contactUs-info-container .contactUs-info-details-container {
+  color: #ffffff;
+  background-color: #44546a;
+  padding: 81px 64px 64px 64px;
+  width: 517px;
+}
+
+.contactUs-container .contactUs-body-container .contactUs-info-container .contactUs-info-details-container .contactUs-info-details-description {
+  margin-bottom: 5px;
+  padding-bottom: 27px;
+}
+
+.contactUs-container .contactUs-body-container .contactUs-info-container .contactUs-info-details-container .contactUs-info-details-description h2 {
+  font-size: 17px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #fcdb10;
+}
+
+.contactUs-container .contactUs-body-container .contactUs-info-container .contactUs-info-details-container .contactUs-info-details-description p {
+  font-size: 10px;
+  padding: 16px 0;
+  border-bottom: 1px solid #fcdb10;
+}
+
+.contactUs-container .contactUs-body-container .contactUs-info-container .contactUs-info-details-container .contactUs-info-details-company-container {
+  padding-bottom: 27px;
+  border-bottom: 1px solid #fcdb10;
+}
+
+.contactUs-container .contactUs-body-container .contactUs-info-container .contactUs-info-details-container .contactUs-info-details-company-container .contactUs-info-details-company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+  padding-bottom: 15px;
+}
+
+.contactUs-container .contactUs-body-container .contactUs-info-container .contactUs-info-details-container .contactUs-info-details-company-container .contactUs-info-details-company i {
+  margin-right: 10px;
+}
+
+.contactUs-container .contactUs-body-container .contactUs-info-container .contactUs-info-details-container .contactUs-info-details-company-container .contactUs-info-details-company h3 {
+  font-weight: normal;
+}
+
+.contactUs-container .contactUs-body-container .contactUs-info-container .contactUs-info-details-container .contactUs-info-details-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 27px;
+}
+
+.contactUs-container .contactUs-body-container .contactUs-info-container .contactUs-info-details-container .contactUs-info-details-social .contactUs-info-details-social {
+  margin-right: 10px;
+}
+
+.contactUs-container .contactUs-body-container .contactUs-info-container .contactUs-info-details-container .contactUs-info-details-social .contactUs-info-details-social i {
+  font-size: 23px;
+}
+
+.contactUs-container .contactUs-body-container .contactUs-info-container .contactUs-info-form-container {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 29px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+
+.contactUs-container .contactUs-body-container .contactUs-info-container .contactUs-info-form-container .contactUs-info-from-field-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+}
+
+.contactUs-container .contactUs-body-container .contactUs-info-container .contactUs-info-form-container .contactUs-info-from-field-container .contactUs-info-from-field-name {
+  background-color: #535f6f;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 360px;
+  height: 48px;
+  padding: 15px 24px 17px;
+}
+
+.contactUs-container .contactUs-body-container .contactUs-info-container .contactUs-info-form-container .contactUs-info-from-field-container .contactUs-info-from-field-name h4 {
+  font-size: 12px;
+  margin: 0;
+  height: 16px;
+}
+
+.contactUs-container .contactUs-body-container .contactUs-info-container .contactUs-info-form-container .contactUs-info-from-field-container .contactUs-info-from-field-info {
+  width: 512px;
+  min-height: 48px;
+}
+
+.contactUs-container .contactUs-body-container .contactUs-info-container .contactUs-info-form-container .contactUs-info-from-field-container .contactUs-info-from-field-info input {
+  width: 100%;
+  height: 100%;
+  padding: 15px 24px 17px;
+  background-color: #f4f4f4;
+  color: #233043;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  margin: 0;
+  line-height: 16px;
+}
+
+.contactUs-container .contactUs-body-container .contactUs-info-container .contactUs-info-form-container .contactUs-info-from-field-container .contactUs-info-from-field-message {
+  width: 512px;
+  min-height: 118px;
+}
+
+.contactUs-container .contactUs-body-container .contactUs-info-container .contactUs-info-form-container .contactUs-info-from-field-container .contactUs-info-from-field-message textarea {
+  width: 100%;
+  height: 100%;
+  padding: 15px 24px 17px;
+  background-color: #f4f4f4;
+  color: #233043;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  margin: 0;
+  line-height: 16px;
+}
+
+.contactUs-container .contactUs-body-container .contactUs-info-container .contactUs-info-form-container .contactUs-info-form-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
