@@ -1705,6 +1705,14 @@ body {
           color: $color-quinary;
         }
       }
+      input[type="text"],
+      select,
+      textarea {
+        &.form-input-primary {
+          background-color: #f4f4f4;
+          color: $color-primary;
+        }
+      }
       input[type="text"] {
         width: 512px;
         height: 48px;
