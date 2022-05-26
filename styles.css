@@ -1913,6 +1913,15 @@ body {
           flex-direction: column;
 }
 
+.flex-end-center {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .banner {
   height: 96px;
 }
@@ -1942,6 +1951,23 @@ body {
 
 .button.button-sm {
   width: 48px;
+}
+
+.button.radio-btn {
+  padding: 15px 24px 17px;
+  gap: 8px;
+}
+
+.button.radio-btn h3 {
+  font-size: 12px;
+  height: 16px;
+  margin: 0;
+  text-transform: none;
+}
+
+.button.radio-btn.radio-btn-primary {
+  background-color: #535f6f;
+  color: #ffffff;
 }
 
 .button h3 {
@@ -2059,8 +2085,77 @@ body {
 }
 
 .form-container {
-  background-color: lightblue;
-  width: 50px;
-  height: 51px;
+  gap: 16px;
+  padding: 29px;
+}
+
+.form-container .form-fields-container {
+  gap: 16px;
+}
+
+.form-container .form-fields-container .form-field-container {
+  gap: 16px;
+}
+
+.form-container .form-fields-container .form-field-container label,
+.form-container .form-fields-container .form-field-container select {
+  -webkit-transition: 0.3s ease-in all;
+  transition: 0.3s ease-in all;
+}
+
+.form-container .form-fields-container .form-field-container label:hover,
+.form-container .form-fields-container .form-field-container select:hover {
+  cursor: pointer;
+}
+
+.form-container .form-fields-container .form-field-container label {
+  padding: 15px 24px 17px;
+  width: 360px;
+  height: 48px;
+}
+
+.form-container .form-fields-container .form-field-container label h3 {
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+}
+
+.form-container .form-fields-container .form-field-container label.form-label-primary {
+  background-color: #535f6f;
+  color: #ffffff;
+}
+
+.form-container .form-fields-container .form-field-container input[type="text"] {
+  width: 512px;
+  height: 48px;
+  padding: 15px 24px 17px;
+  margin: 0;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.form-container .form-fields-container .form-field-container select {
+  width: 512px;
+  min-height: 48px;
+  padding: 15px 24px 17px;
+  margin: 0;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.form-container .form-fields-container .form-field-container textarea {
+  width: 512px;
+  min-height: 118px;
+  resize: none;
+  padding: 15px 24px 17px;
+  margin: 0;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  line-height: 16px;
 }
 /*# sourceMappingURL=styles.css.map */

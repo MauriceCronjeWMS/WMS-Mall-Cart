@@ -1511,6 +1511,11 @@ body {
   flex-direction: column;
 }
 
+// Aligns contents horizonal end and vertical center
+.flex-end-center {
+  justify-content: flex-end;
+  align-items: center;
+}
 // Components
 
 // Banner component
@@ -1536,8 +1541,25 @@ body {
 .button {
   height: 48px;
   width: 155px;
+  // Button with just icon
   &.button-sm {
     width: 48px;
+  }
+  // Radio button
+  &.radio-btn {
+    padding: 15px 24px 17px;
+    gap: 8px;
+    h3 {
+      font-size: 12px;
+      height: 16px;
+      margin: 0;
+      text-transform: none;
+    }
+
+    &.radio-btn-primary {
+      background-color: $color-denary;
+      color: $color-quinary;
+    }
   }
   padding: 15px 15px 17px;
   outline: none;
@@ -1661,7 +1683,76 @@ body {
 
 // form component
 .form-container {
-  background-color: lightblue;
-  width: 50px;
-  height: 51px;
+  // Gap between containers in form (If the is fields and a button)
+  gap: 16px;
+  padding: 29px;
+  .form-fields-container {
+    // Gap between fields
+    gap: 16px;
+    .form-field-container {
+      // gap between label and field
+      gap: 16px;
+      label,
+      select {
+        transition: $animation-basic-primary;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      label {
+        padding: 15px 24px 17px;
+        width: 360px;
+        height: 48px;
+        h3 {
+          font-size: 12px;
+          line-height: 16px;
+          margin: 0;
+        }
+        &.form-label-primary {
+          background-color: $color-denary;
+          color: $color-quinary;
+        }
+      }
+      input[type="text"] {
+        width: 512px;
+        height: 48px;
+
+        padding: 15px 24px 17px;
+        margin: 0;
+
+        border: none;
+        outline: none;
+
+        font-size: 12px;
+        line-height: 16px;
+      }
+      select {
+        width: 512px;
+        min-height: 48px;
+
+        padding: 15px 24px 17px;
+        margin: 0;
+
+        border: none;
+        outline: none;
+
+        font-size: 12px;
+        line-height: 16px;
+      }
+      textarea {
+        width: 512px;
+        min-height: 118px;
+        resize: none;
+
+        padding: 15px 24px 17px;
+        margin: 0;
+
+        border: none;
+        outline: none;
+
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+  }
 }

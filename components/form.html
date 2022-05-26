@@ -15,13 +15,71 @@
   </head>
   <body>
     <!-- 
-        Form.
+        Form component.
         NOTE:
-        You need to change the 
+        You need to change the id for the input and reference it in the label
     -->
-    <div class="form-container">
-      <div class="form-field-container">
-        <label for=""> </label>
+
+    <!-- Default form -->
+    <div class="form-container flex flex-column">
+      <!-- Fields container -->
+      <div class="form-fields-container flex flex-column">
+        <!-- 
+              Text Field container 
+            -->
+        <div class="form-field-container flex">
+          <label
+            class="form-label-primary flex flex-end-center"
+            for="InputIDText"
+          >
+            <h3>Label Text</h3>
+          </label>
+          <input type="text" id="InputIDText" />
+        </div>
+        <!-- 
+              Select Field container 
+            -->
+        <div class="form-field-container flex">
+          <label
+            class="form-label-primary flex flex-end-center"
+            for="InputIDSelect"
+          >
+            <h3>Label Select</h3>
+          </label>
+          <select name="selectExample" id="InputIDSelect">
+            <option value="Select option 1">Select option 1</option>
+            <option value="Select option 2">Select option 2</option>
+            <option value="Select option 3">Select option 3</option>
+          </select>
+        </div>
+        <!-- 
+              TextArea Field container 
+            -->
+        <div class="form-field-container flex">
+          <label
+            class="form-label-primary flex flex-end-center"
+            for="InputIDTextArea"
+          >
+            <h3>Label Name</h3>
+          </label>
+          <textarea name="InputIDTextArea" id="InputIDTextArea"></textarea>
+        </div>
+        <!-- 
+              Radio Button container 
+            -->
+        <div class="form-field-container flex">
+          <label
+            class="button radio-btn radio-btn-primary flex"
+            for="inputIDRadioBtn"
+          >
+            <input
+              type="radio"
+              id="inputIDRadioBtn"
+              name="radioBtnExmapleGroup"
+            />
+            <h3>iAmRadioButton</h3>
+          </label>
+        </div>
       </div>
     </div>
   </body>
