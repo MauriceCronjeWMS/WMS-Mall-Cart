@@ -1365,6 +1365,118 @@ body {
       padding: 25px 0 28px;
     }
   }
+  .contactUs-body-container {
+    .contactUs-info-container {
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+
+      .contactUs-info-details-container {
+        color: $color-quinary;
+        background-color: $color-tertiary;
+        padding: 30px;
+        width: 517px;
+
+        .contactUs-info-details-description {
+          h2 {
+            font-size: 17px;
+          }
+          p {
+            font-size: 10px;
+          }
+        }
+        .contactUs-info-details-company-container {
+          .contactUs-info-details-company {
+            display: flex;
+            align-items: center;
+            font-size: 10px;
+
+            i {
+              padding-right: 5px;
+            }
+          }
+        }
+        .contactUs-info-details-social {
+          display: flex;
+
+          .contactUs-info-details-social {
+            margin-right: 8px;
+
+            i {
+              font-size: 23px;
+            }
+          }
+        }
+      }
+      .contactUs-info-form-container {
+        background-color: $color-quinary;
+        width: 100%;
+        padding: 29px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .contactUs-info-from-field-container {
+          display: flex;
+          gap: 16px;
+
+          .contactUs-info-from-field-name {
+            background-color: $color-denary;
+            color: $color-quinary;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 360px;
+            height: 48px;
+            padding: 15px 24px 17px;
+
+            h4 {
+              font-size: 12px;
+              margin: 0;
+              height: 16px;
+            }
+          }
+          .contactUs-info-from-field-info {
+            width: 512px;
+            min-height: 48px;
+
+            input {
+              width: 100%;
+              height: 100%;
+              padding: 15px 24px 17px;
+              background-color: $color-septenary;
+              color: $color-primary;
+              border: none;
+              outline: none;
+              font-size: 12px;
+              margin: 0;
+              line-height: 16px;
+            }
+          }
+          .contactUs-info-from-field-message {
+            width: 512px;
+            min-height: 118px;
+            textarea {
+              width: 100%;
+              height: 100%;
+              padding: 15px 24px 17px;
+              background-color: $color-septenary;
+              color: $color-primary;
+              border: none;
+              outline: none;
+              font-size: 12px;
+              margin: 0;
+              line-height: 16px;
+            }
+          }
+        }
+        .contactUs-info-form-button {
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
 }
 
 // More Utilities
