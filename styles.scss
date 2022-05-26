@@ -1379,7 +1379,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+// Makes everything inside of container horizontal
 .flex-column {
   flex-direction: column;
 }
@@ -1501,6 +1501,7 @@ body {
           margin: 0;
         }
       }
+      // Primary color for meta data of card
       &.card-icons-primary {
         color: $color-quaternary;
       }
@@ -1524,8 +1525,16 @@ body {
       gap: 8px;
     }
   }
+  // Primary color for card
   &.card-primary {
     background-color: $color-quinary;
     color: $color-primary;
   }
+}
+
+// form component
+.form-container {
+  background-color: lightblue;
+  width: 50px;
+  height: 50px;
 }
