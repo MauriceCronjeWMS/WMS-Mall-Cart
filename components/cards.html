@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css" />
+    <title>Cards</title>
+    <style>
+      /*
+        NOTE: 
+        Only for you to see it better. Not an intended style. 
+      */
+      .card-container {
+        background-color: lightseagreen;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        This is the cards for the product items 
+     -->
+
+    <!-- Default card -->
+    <!-- 
+        Card Container is where you set if it a vertical or horizontal card 
+        (You add a flex class to this elements class list)
+    -->
+    <div class="card-container">
+      <!-- Card image -->
+      <div class="card-img-container flex flex-center">
+        <img src="https://picsum.photos/450/450" alt="product image" />
+      </div>
+      <div class="card-info-container flex flex-column">
+        <!-- The cards main title -->
+        <div class="card-title">
+          <h3>Card Title</h3>
+        </div>
+        <!-- 
+            The card's icons that tells more about the card.
+            (Like the availability or to view something similar)
+         -->
+        <div class="card-icons-container card-icons-primary flex">
+          <!-- Card icon with title -->
+          <div class="card-icon-container flex">
+            <!-- Card icon -->
+            <i class="far fa-check-square"></i>
+            <!-- Card icon title -->
+            <h4>MetaData</h4>
+          </div>
+          <!-- Card icon with title -->
+          <div class="card-icon-container flex">
+            <!-- Card icon -->
+            <i class="fas fa-external-link-alt"></i>
+            <!-- Card icon title -->
+            <h4>MetaData</h4>
+          </div>
+        </div>
+        <!-- Card discription -->
+        <div class="card-discription">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi
+            repellendus, nam temporibus perspiciatis nesciunt mollitia!
+          </p>
+        </div>
+        <!-- 
+            Card sub title.
+            (Can be something like price) 
+        -->
+        <div class="card-subTitle">
+          <h3>Sub Title</h3>
+        </div>
+        <!-- 
+            Card buttons
+            (Can be to add, delete or view something) 
+        -->
+        <div class="card-buttons-container flex">
+          <button class="button button-sm flex flex-center button-tertiary">
+            <i class="far fa-heart"></i>
+          </button>
+          <button class="button flex flex-center button-primary">
+            <h3>iAmButton</h3>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Card color primary -->
+    <div class="card-container card-primary">
+      <!-- Card image -->
+      <div class="card-img-container flex flex-center">
+        <img src="https://picsum.photos/450/450" alt="product image" />
+      </div>
+      <div class="card-info-container flex flex-column">
+        <!-- The cards main title -->
+        <div class="card-title">
+          <h3>Card Title</h3>
+        </div>
+        <!-- 
+            The card's icons that tells more about the card.
+            (Like the availability or to view something similar)
+         -->
+        <div class="card-icons-container card-icons-primary flex">
+          <!-- Card icon with title -->
+          <div class="card-icon-container flex">
+            <!-- Card icon -->
+            <i class="far fa-check-square"></i>
+            <!-- Card icon title -->
+            <h4>MetaData</h4>
+          </div>
+          <!-- Card icon with title -->
+          <div class="card-icon-container flex">
+            <!-- Card icon -->
+            <i class="fas fa-external-link-alt"></i>
+            <!-- Card icon title -->
+            <h4>MetaData</h4>
+          </div>
+        </div>
+        <!-- Card discription -->
+        <div class="card-discription">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi
+            repellendus, nam temporibus perspiciatis nesciunt mollitia!
+          </p>
+        </div>
+        <!-- 
+            Card sub title.
+            (Can be something like price) 
+        -->
+        <div class="card-subTitle">
+          <h3>Sub Title</h3>
+        </div>
+        <!-- 
+            Card buttons
+            (Can be to add, delete or view something) 
+        -->
+        <div class="card-buttons-container flex">
+          <button class="button button-sm flex flex-center button-tertiary">
+            <i class="far fa-heart"></i>
+          </button>
+          <button class="button flex flex-center button-primary">
+            <h3>iAmButton</h3>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/23a0b1c1e7.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="../index.js"></script>
+</html>
